@@ -1,0 +1,6 @@
+{
+  "type": "palm",
+  "primitive_leaves": "minecraft:birch_leaves",
+  "cell_kit": "dtstilllife:joshua",
+  "seed_drop_chances": [0.125, 0.25, 0.375, 0.5]
+}

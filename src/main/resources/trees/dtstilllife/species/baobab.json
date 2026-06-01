@@ -1,0 +1,20 @@
+{
+  "family": "dtstilllife:baobab",
+  "tapering": 0.9,
+  "signal_energy": 28.0,
+  "up_probability": 1,
+  "lowest_branch_height": 15,
+  "growth_rate": 0.4,
+  "soil_longevity": 20,
+  "max_branch_radius": 24,
+  "leaves_properties": "dtstilllife:baobab",
+  "generate_seed": true,
+  "environment_factors": {
+    "#c:is_cold": 0.75,
+    "#c:is_forest": 0.9
+  },
+  "primitive_sapling": "jungle_sapling",
+  "features": [
+    "mound"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "common_leaves": "dtstilllife:linden",
+    "common_species": "dtstilllife:linden",
+    "primitive_log": "stripped_oak_log",
+    "max_branch_radius": 8,
+    "generate_surface_root": false,
+    "max_signal_depth": 22
+}

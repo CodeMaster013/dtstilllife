@@ -1,0 +1,22 @@
+{
+    "family": "dtstilllife:beech",
+    "growth_logic_kit": {
+        "name": "dtstilllife:up_and_out",
+        "properties": {
+            "max_outward_height": 11
+        }
+    },
+    "signal_energy": 18.0,
+    "up_probability": 10,
+    "max_signal_depth": 24,
+    "lowest_branch_height": 7,
+    "growth_rate": 1.0,
+    "soil_longevity": 16,
+    "max_branch_radius": 8,
+    "preferred_climate" : "temperate",
+    "climate_tolerance": 0.5,
+    "primitive_sapling": "dark_oak_sapling",
+    "lang_overrides": {
+        "seed": "Beech Nut"
+    }
+}

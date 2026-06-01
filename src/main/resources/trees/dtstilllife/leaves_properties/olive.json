@@ -1,0 +1,6 @@
+{
+  "type": "scruffy",
+  "primitive_leaves": "minecraft:birch_leaves",
+  "cell_kit": "dynamictrees:azalea",
+  "sound": "azalea_leaves"
+}

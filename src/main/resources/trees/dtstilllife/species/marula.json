@@ -1,0 +1,22 @@
+{
+  "family": "dtstilllife:marula",
+  "growth_logic_kit": "dtstilllife:juniper",
+  "tapering": 0.2,
+  "up_probability": 8,
+  "lowest_branch_height": 4,
+  "signal_energy": 8.0,
+  "growth_rate": 0.7,
+  "soil_longevity": 2,
+  "leaves_properties": "dtstilllife:marula",
+  "generate_seed": true,
+  "generate_sapling": true,
+  "environment_factors": {
+    "sparse": 1.1,
+    "#c:is_hot": 0.5,
+    "#c:is_wet": 0.75
+  },
+  "perfect_biomes": {
+    "tag": "#minecraft:is_jungle"
+  },
+  "acceptable_soils": ["dirt_like","sand_like"]
+}

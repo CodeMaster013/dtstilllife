@@ -1,0 +1,17 @@
+{
+  "family": "dtstilllife:olive",
+  "growth_logic_kit": "dtstilllife:juniper",
+  "tapering": 0.8,
+  "up_probability": 8,
+  "lowest_branch_height": 2,
+  "signal_energy": 14.0,
+  "growth_rate": 0.9,
+  "soil_longevity": 12,
+  "leaves_properties": "dtstilllife:olive",
+  "generate_seed": true,
+  "environment_factors": {
+    "sparse": 1.1,
+    "#c:is_cold": 0.5
+  },
+  "acceptable_soils": ["dirt_like"]
+}

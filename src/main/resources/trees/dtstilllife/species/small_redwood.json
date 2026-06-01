@@ -1,0 +1,32 @@
+{
+  "family": "dtstilllife:redwood",
+  "tapering": 0.45,
+  "signal_energy": 28.0,
+  "up_probability": 16,
+  "lowest_branch_height": 9,
+  "growth_rate": 0.9,
+  "soil_longevity": 8,
+  "max_branch_radius": 24,
+  "growth_logic_kit": "dtstilllife:small_redwood",
+  "leaves_properties": "dtstilllife:redwood",
+  "environment_factors" : {
+    "#c:is_hot": 0.50,
+    "#c:is_dry": 0.25,
+    "#c:is_wet": 0.75
+  },
+  "perfect_biomes": { "name": ".*redwood.*" },
+  "mega_species": "dtstilllife:redwood",
+  "features" : [
+    "conifer_topper",
+    "bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Redwood Cone"
+  }
+}

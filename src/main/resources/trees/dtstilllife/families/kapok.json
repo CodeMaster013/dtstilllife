@@ -1,0 +1,8 @@
+{
+  "common_leaves": "dtstilllife:kapok",
+  "common_species": "dtstilllife:kapok",
+  "primitive_log": "minecraft:jungle_log",
+  "primitive_stripped_log": "stripped_jungle_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true
+}

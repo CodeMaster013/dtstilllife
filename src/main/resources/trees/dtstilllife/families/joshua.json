@@ -1,0 +1,9 @@
+{
+  "type": "palm",
+  "common_leaves": "dtstilllife:joshua",
+  "common_species": "dtstilllife:joshua",
+  "primitive_log": "stripped_jungle_log",
+  "max_branch_radius": 8,
+  "primary_thickness": 2,
+  "secondary_thickness": 3
+}

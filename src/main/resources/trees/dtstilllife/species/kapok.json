@@ -1,0 +1,47 @@
+{
+  "family": "dtstilllife:kapok",
+  "tapering": 0.2,
+  "signal_energy": 27.0,
+  "up_probability": 4,
+  "lowest_branch_height": 18,
+  "growth_rate": 1.4,
+  "max_branch_radius": 16,
+  "growth_logic_kit": {
+    "name": "dtstilllife:canopy",
+    "properties": {
+      "lowest_branch_variation": 3
+    }
+  },
+  "leaves_properties": "dtstilllife:kapok",
+  "generate_seed": true,
+  "environment_factors" : {
+    "#c:is_snowy": 0.5,
+    "#c:is_dry": 0.75
+  },
+  "perfect_biomes": {
+    "tag": "#minecraft:is_jungle"
+  },
+  "acceptable_soils": ["dirt_like"],
+  "features": [
+    "dtstilllife:extra_bottom_flare",
+    {
+      "name": "roots",
+      "properties": {
+        "level_limit": 3,
+        "scale_factor": 20
+      }
+    },
+    "mound",
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "max_length": 10,
+        "quantity": 24
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Kapok Pod"
+  }
+}

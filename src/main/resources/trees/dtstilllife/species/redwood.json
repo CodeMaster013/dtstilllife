@@ -1,0 +1,63 @@
+{
+  "family": "dtstilllife:redwood",
+  "tapering": 0.22,
+  "signal_energy": 84.0,
+  "up_probability": 30,
+  "lowest_branch_height": 20,
+  "growth_rate": 1.9,
+  "soil_longevity": 40,
+  "max_branch_radius": 24,
+  "growth_logic_kit": "dtstilllife:redwood",
+  "leaves_properties": "dtstilllife:redwood",
+  "environment_factors" : {
+    "#c:is_hot": 0.50,
+    "#c:is_dry": 0.25,
+    "#c:is_forest": 1.05
+  },
+  "world_gen_leaf_map_height": 64,
+  "common_override": { "name": ".*redwood.*" },
+  "perfect_biomes": { "name": ".*redwood.*" },
+  "world_gen_acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": ["dirt_like"],
+  "features" : [
+    "conifer_topper",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    {
+      "name": "clear_volume",
+      "properties": {
+        "height": 32
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 15,
+        "scale_factor": 26,
+        "level_limit": 4
+      }
+    },
+    "bottom_flare",
+    {
+      "name": "random_predicate",
+      "properties": {
+        "gen_feature": {
+          "name": "undergrowth",
+          "properties": {
+            "undergrowth_species": "dynamictrees:oak_undergrowth",
+            "proportion_of_secondary_species": 0
+          }
+        },
+        "only_world_gen": true
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Redwood Cone"
+  },
+  "generate_seed": true
+}

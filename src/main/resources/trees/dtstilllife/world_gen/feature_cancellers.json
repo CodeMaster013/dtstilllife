@@ -1,0 +1,19 @@
+[
+  {
+    "__comment": "Cancel standard tree features from still life biomes.",
+    "select": { "name": "still_life.*" },
+    "cancellers": {
+      "types": [ "dtstilllife:tree", "tree"],
+      "namespaces": ["still_life", "minecraft"]
+    }
+  },
+  {
+    "__comment": "Cancel standard cactus features from the desert and badlands.",
+    "only_if_loaded": "dynamictreesplus",
+    "select":  { "name": "still_life.*" },
+    "cancellers": {
+      "type": "dynamictreesplus:cactus",
+      "namespace": "minecraft"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "family": "dtstilllife:larch",
+  "tapering": 0.1,
+  "signal_energy": 32.0,
+  "up_probability": 9,
+  "lowest_branch_height": 5,
+  "growth_rate": 1.2,
+  "soil_longevity": 20,
+  "world_gen_leaf_map_height": 40,
+  "leaves_properties": "dtstilllife:larch",
+  "generate_seed": true,
+  "generate_sapling": true,
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 5,
+      "height_variation": 4,
+      "variate_lowest_branch": true
+    }
+  },
+  "environment_factors" : {
+    "#c:is_hot": 0.50,
+    "#c:is_dry": 0.25,
+    "#c:is_wet": 0.75
+  },
+  "features" : [
+    "conifer_topper",
+    "podzol"
+  ],
+  "lang_overrides": {
+    "seed": "Larch Cone"
+  }
+}

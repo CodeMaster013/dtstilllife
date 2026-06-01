@@ -1,0 +1,8 @@
+{
+  "common_leaves": "dtstilllife:pine",
+  "common_species": "dtstilllife:black_pine",
+  "primitive_log": "mangrove_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "max_signal_depth": 64
+}

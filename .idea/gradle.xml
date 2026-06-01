@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/../DynamicTrees/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/../DynamicTrees/buildSrc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../DynamicTrees" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../DynamicTrees" />
+            <option value="$PROJECT_DIR$/../DynamicTrees/buildSrc" />
+            <option value="$PROJECT_DIR$/../DynamicTrees/common" />
+            <option value="$PROJECT_DIR$/../DynamicTrees/fabric" />
+            <option value="$PROJECT_DIR$/../DynamicTrees/neoforge" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+        <option name="myGradleHome" value="" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+{
+  "family": "dtstilllife:maple",
+  "tapering": 0.2,
+  "signal_energy": 18.0,
+  "up_probability": 6,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtstilllife:maple",
+  "environment_factors": {
+    "cold": 1.1,
+    "hot": 0.2,
+    "dry": 0.4,
+    "forest": 0.9
+  },
+  "features": [
+    "bottom_flare",
+    "mound",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 16
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Maple Samara"
+  },
+  "generate_seed": true
+}

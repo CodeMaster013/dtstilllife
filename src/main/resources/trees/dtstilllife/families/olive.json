@@ -1,0 +1,8 @@
+{
+  "common_leaves": "dtstilllife:olive",
+  "common_species": "dtstilllife:olive",
+  "primitive_log": "acacia_log",
+  "primitive_stripped_log": "stripped_acacia_log",
+  "max_branch_radius": 24,
+  "max_signal_depth": 12
+}

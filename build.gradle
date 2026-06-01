@@ -1,0 +1,97 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.140'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/generated/resources'
+        }
+    }
+}
+
+neoForge {
+    version = project.neoforge_version
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+
+    runs {
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'forge.logging.console.level', 'debug'
+        }
+
+        client {
+            gameDirectory = project.file('C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft')
+            client()
+        }
+
+        server {
+            server()
+        }
+
+        data {
+            gameDirectory = project.file('C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft')
+            data()
+            programArguments.addAll '--mod', 'dtstilllife',
+                    '--all',
+                    '--output', file('src/generated/resources/').getAbsolutePath(),
+                    '--existing', file('src/main/resources').getAbsolutePath(),
+                    "--existing-mod", "dynamictrees",
+                    "--existing-mod", "mr_still_life",
+                    "--existing-mod", "vanillabackport"
+        }
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = "https://maven.neoforged.net/releases/"
+    }
+    maven {
+        url = "https://www.cursemaven.com"
+    }
+    maven {
+        url = 'https://harleyoconnor.com/maven'
+    }
+}
+jar {
+    destinationDirectory = file("C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft\\mods")
+}
+
+dependencies {
+    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-${minecraft_version}:${dynamic_trees_version}"
+    implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dynamic_trees_plus_version}"
+    implementation "curse.maven:vanillabackport-417430:${vanilla_backport_version_id}"
+}
+
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [
+            minecraft_version           : minecraft_version,
+            minecraft_version_range     : minecraft_version_range,
+            neo_version                 : neoforge_version,
+            loader_version_range        : neoforge_loader_version_range,
+            mod_id                      : mod_id,
+            mod_name                    : mod_name,
+            mod_license                 : mod_license,
+            mod_version                 : version,
+            mod_authors                 : mod_authors,
+            mod_credits                 : mod_credits,
+            mod_description             : mod_description,
+            mod_url                     : mod_url,
+            dynamic_trees_version       : dynamic_trees_version,
+            still_life_version          : still_life_version,
+            dynamic_trees_plus_version  : dynamic_trees_plus_version,
+            vanilla_backport_version_id    : vanilla_backport_version_id,
+    ]
+    inputs.properties replaceProperties
+    filesMatching(["META-INF/neoforge.mods.toml"]) {
+        expand replaceProperties
+    }
+}

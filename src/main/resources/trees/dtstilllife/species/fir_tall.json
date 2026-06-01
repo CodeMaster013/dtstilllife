@@ -1,0 +1,23 @@
+{
+  "family": "dtstilllife:fir",
+  "tapering": 0.3,
+  "signal_energy": 30.0,
+  "up_probability": 20,
+  "lowest_branch_height": 7,
+  "growth_rate": 0.9,
+  "growth_logic_kit": "conifer",
+  "leaves_properties": "dtstilllife:fir",
+  "environment_factors" : {
+    "#c:is_hot": 0.50,
+    "#c:is_wet": 0.75
+  },
+  "primitive_sapling": "minecraft:spruce_sapling",
+  "world_gen_acceptable_soils": [ "snow_like" ],
+  "acceptable_soils": ["dirt_like"],
+  "features" : [
+    "conifer_topper"
+  ],
+  "lang_overrides": {
+    "seed": "Fir Cone"
+  }
+}

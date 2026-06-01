@@ -1,0 +1,49 @@
+{
+    "family": "dtstilllife:old_oak",
+    "tapering": 0.3,
+    "signal_energy": 42.0,
+    "up_probability": 8,
+    "lowest_branch_height": 6,
+    "growth_rate": 1.2,
+    "soil_longevity": 16,
+    "max_branch_radius": 16,
+    "preferred_climate" : "temperate",
+    "growth_logic_kit": "dtstilllife:long_branch_canopy",
+    "climate_tolerance": 0.5,
+    "primitive_sapling": "oak_sapling",
+    "features" : [
+        {
+            "name": "dtstilllife:replace_on_radius",
+            "properties": {
+                "species": "oak",
+                "max_radius": 7
+            }
+        },
+        {
+            "name": "rot_soil",
+            "properties": {
+                "rotten_soil": "podzol"
+            }
+        },
+        "mushroom_rot",
+        "bee_nest",
+        "mound",
+        {
+            "name": "roots",
+            "properties": {
+                "min_trunk_radius": 8,
+                "scale_factor": 2,
+                "level_limit": 8
+            }
+        },
+        {
+            "name": "bottom_flare",
+            "properties": {
+                "min_radius": 8
+            }
+        }
+    ],
+    "lang_overrides": {
+        "seed": "Oak Acorn"
+    }
+}

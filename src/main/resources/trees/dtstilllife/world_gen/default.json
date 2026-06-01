@@ -1,0 +1,26 @@
+[
+  {
+    "select": {
+      "name": "still_life:temperate_mixed_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "old_oak": 2,
+          "oak_undergrowth": 1,
+          "spruce": 9,
+          "birch": 5,
+          "pine": 2,
+          "beech": 1
+        }
+      },
+      "chance": 1.0,
+      "density": {
+        "math": {
+          "mul": [ "noise", 2.0 ]
+        }
+      },
+      "multipass": true
+    }
+  }
+]

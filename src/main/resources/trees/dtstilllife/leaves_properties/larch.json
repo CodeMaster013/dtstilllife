@@ -1,0 +1,5 @@
+{
+  "primitive_leaves": "minecraft:acacia_leaves",
+  "smother": 6,
+  "cell_kit": "dynamictrees:conifer"
+}

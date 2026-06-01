@@ -1,0 +1,8 @@
+{
+  "common_leaves": "dtstilllife:aspen",
+  "common_species": "dtstilllife:aspen",
+  "primitive_log": "minecraft:stripped_pale_oak_log",
+  "max_branch_radius": 6,
+  "generate_surface_root": false,
+  "max_signal_depth": 48
+}

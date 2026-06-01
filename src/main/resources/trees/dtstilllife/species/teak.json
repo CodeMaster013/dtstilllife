@@ -1,0 +1,23 @@
+{
+  "type": "dtstilllife:cypress",
+  "family": "dtstilllife:teak",
+  "tapering": 0.4,
+  "signal_energy": 35.0,
+  "up_probability": 26,
+  "lowest_branch_height": 9,
+  "growth_rate": 1.1,
+  "soil_longevity": 12,
+  "max_branch_radius": 18,
+  "world_gen_leaf_map_height": 64,
+  "leaves_properties": "dtstilllife:teak",
+  "environment_factors" : {
+    "#c:is_cold": 0.5,
+    "#c:is_dry": 0.7
+  },
+  "primitive_sapling": "spruce_sapling",
+  "acceptable_soils": ["dirt_like" ],
+  "world_gen_acceptable_soils": [ "mud_like", "dirt_like" ],
+  "lang_overrides": {
+    "seed": "Teak Seed"
+  }
+}

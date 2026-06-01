@@ -1,0 +1,9 @@
+{
+  "common_leaves": "dtstilllife:larch",
+  "common_species": "dtstilllife:larch",
+  "primitive_log": "dark_oak_log",
+  "primitive_stripped_log": "stripped_dark_oak_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "max_signal_depth": 64
+}

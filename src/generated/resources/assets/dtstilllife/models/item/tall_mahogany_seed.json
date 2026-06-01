@@ -1,0 +1,6 @@
+{
+  "parent": "dynamictrees:item/standard_seed",
+  "textures": {
+    "layer0": "dtstilllife:item/tall_mahogany_seed"
+  }
+}

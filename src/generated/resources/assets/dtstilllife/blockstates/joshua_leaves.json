@@ -1,0 +1,44 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dtstilllife:block/palm_leaves/joshua_frond"
+      },
+      "when": {
+        "distance": "1|2"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtstilllife:block/palm_leaves/joshua_core_top"
+      },
+      "when": {
+        "distance": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtstilllife:block/palm_leaves/joshua_core_bottom"
+      },
+      "when": {
+        "distance": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/birch_leaves"
+      },
+      "when": {
+        "OR": [
+          {
+            "direction": "0",
+            "distance": "1|2"
+          },
+          {
+            "distance": "5|6|7"
+          }
+        ]
+      }
+    }
+  ]
+}
