@@ -14,7 +14,7 @@
     "#c:is_dry": 0.25,
     "#c:is_forest": 1.05
   },
-  "world_gen_leaf_map_height": 64,
+  "world_gen_leaf_map_height": 132,
   "common_override": { "name": ".*redwood.*" },
   "perfect_biomes": { "name": ".*redwood.*" },
   "world_gen_acceptable_soils": [ "dirt_like" ],

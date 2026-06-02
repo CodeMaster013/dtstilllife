@@ -15,12 +15,12 @@ import net.minecraft.resources.ResourceLocation;
 /**
  * Yoinked from Dynamic Trees Regions Unexplored
  */
-public class CypressGrowthGrowthLogic extends VariateHeightGrowthLogic {
+public class CypressGrowthLogic extends VariateHeightGrowthLogic {
 
     public static final ConfigurationProperty<Float> CANOPY_ENERGY = ConfigurationProperty.floatProperty("canopy_energy");
     public static final ConfigurationProperty<Float> BOTTOM_BRANCH_SIDE_ENERGY = ConfigurationProperty.floatProperty("bottom_branch_side_energy");
 
-    public CypressGrowthGrowthLogic(ResourceLocation registryName) {
+    public CypressGrowthLogic(ResourceLocation registryName) {
         super(registryName);
     }
 

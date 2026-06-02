@@ -91,7 +91,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
 
     private boolean isTree(ConfiguredFeature<?, ?> featureConfig, String featureName) {
         //name check may help narrow the cancellations due to still life's usage of /tree/ in the naming convention.
-        return isTree(featureConfig) && (StringUtils.isNotEmpty(featureName) && featureName.contains("tree"));
+        return isTree(featureConfig) && (StringUtils.isNotEmpty(featureName) && (featureName.contains("tree") || featureName.contains("bushes")));
     }
 
     private boolean isTree(ConfiguredFeature<?, ?> featureConfig) {

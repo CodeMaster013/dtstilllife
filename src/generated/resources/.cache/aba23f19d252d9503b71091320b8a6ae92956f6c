@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-31T07:57:41.9721797	Block States: dtstilllife
+// 1.21.1	2026-05-31T13:03:48.4583028	Block States: dtstilllife
 3d57de2bf111b84abab08560762f956f31f0a16a assets/dtstilllife/blockstates/aspen_branch.json
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtstilllife/blockstates/aspen_leaves.json
 2716ce2b28c048422451af89e839f8c76e26d02a assets/dtstilllife/blockstates/aspen_sapling.json
@@ -8,6 +8,7 @@ fb3220605094a2b9624eab637724c4969c4732ab assets/dtstilllife/blockstates/baobab_s
 76acb59a18747760ea368cfc67d19ff594fc43d3 assets/dtstilllife/blockstates/beech_branch.json
 22189459d4fa383ebe3c902b33ee2c18870d8776 assets/dtstilllife/blockstates/beech_leaves.json
 2cb8952dcd273a2f6f0fc7d21f8dba9008da2282 assets/dtstilllife/blockstates/beech_sapling.json
+8ef838697c46c00a32d716cdcf4638eed23d1cc0 assets/dtstilllife/blockstates/birch_bush_leaves.json
 acc5cbe4a39541b4e93c5a2c0aa3e0c094b6d2f5 assets/dtstilllife/blockstates/black_pine_branch.json
 c234eaac4f340558f0ac134ace8d099b7e3d3803 assets/dtstilllife/blockstates/black_pine_root.json
 3dce7558091af8e3722888417cabefe0d13aeb3a assets/dtstilllife/blockstates/black_pine_sapling.json
@@ -67,6 +68,7 @@ ee24d310f97c683da7dd242391074b9d0f05106f assets/dtstilllife/blockstates/poplar_r
 ab47df46795bc4ee1d88b446b0305ee474c1ed9c assets/dtstilllife/blockstates/redwood_leaves.json
 8ef9b7dea03da7a379d4453011e64d52a6c1118e assets/dtstilllife/blockstates/redwood_root.json
 7385f96d36612d77815a27c2ce04d1d7eba3bbf8 assets/dtstilllife/blockstates/redwood_sapling.json
+ab47df46795bc4ee1d88b446b0305ee474c1ed9c assets/dtstilllife/blockstates/spruce_bush_leaves.json
 1e09ebd41ab0f8e7975adaddb1a9b69441a5ddc1 assets/dtstilllife/blockstates/stripped_kapok_branch.json
 a7b3805f3958e13b0883894cc79f9ab71c509f10 assets/dtstilllife/blockstates/stripped_larch_branch.json
 d99aacdcbecab0f6b43b8da98c1c3627e7bba5b3 assets/dtstilllife/blockstates/stripped_mahogany_branch.json

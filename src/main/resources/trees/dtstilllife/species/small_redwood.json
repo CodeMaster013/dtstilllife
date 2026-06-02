@@ -7,6 +7,7 @@
   "growth_rate": 0.9,
   "soil_longevity": 8,
   "max_branch_radius": 24,
+  "world_gen_leaf_map_height": 80,
   "growth_logic_kit": "dtstilllife:small_redwood",
   "leaves_properties": "dtstilllife:redwood",
   "environment_factors" : {

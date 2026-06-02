@@ -1,6 +1,5 @@
 package wexlabs;
 
-import com.dtteam.dynamictrees.api.cell.Cell;
 import com.dtteam.dynamictrees.api.cell.CellKit;
 import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
 import com.dtteam.dynamictrees.event.RegistryEvent;
@@ -29,7 +28,7 @@ public class Registrator {
     public static final GrowthLogicKit LONG_BRANCH_CANOPY_GROWTH_LOGIC = new LongBranchCanopyGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "long_branch_canopy"));
     public static final GrowthLogicKit UP_AND_OUT_GROWTH_LOGIC = new UpAndOutGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "up_and_out"));
     public static final GrowthLogicKit BAOBAB_GROWTH_LOGIC = new BaobabGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "baobab"));
-    public static final GrowthLogicKit CYPRESS_GROWTH_LOGIC = new CypressGrowthGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "cypress"));
+    public static final GrowthLogicKit CYPRESS_GROWTH_LOGIC = new CypressGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "cypress"));
     public static final GrowthLogicKit REDWOOD_GROWTH_LOGIC = new RedwoodGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "redwood"));
     public static final GrowthLogicKit SMALL_REDWOOD_GROWTH_LOGIC = new SmallRedwoodGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "small_redwood"));
     public static final GrowthLogicKit WILLOW_GROWTH_LOGIC = new WillowGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "willow"));

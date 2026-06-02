@@ -6,12 +6,14 @@
     "apply": {
       "species": {
         "random": {
-          "old_oak": 2,
+          "old_oak": 4,
           "oak_undergrowth": 1,
-          "spruce": 9,
-          "birch": 5,
-          "pine": 2,
-          "beech": 1
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 16,
+          "birch": 9,
+          "pine": 4,
+          "beech": 3
         }
       },
       "chance": 1.0,
@@ -21,6 +23,45 @@
         }
       },
       "multipass": true
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mixed_forest_steppe"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 4,
+          "old_oak": 2,
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 3,
+          "birch": 6,
+          "pine": 2,
+          "beech": 2
+        }
+      },
+      "density": {
+        "math": { "mul": [ "noise", 2.0 ] }
+      },
+      "chance":  {
+        "math": { "species":  [["birch_bush", "spruce_bush", "oak_undergrowth"], {"min": [ "noise", 0.5]}, { "ifgt": ["noise", 0.8, {"mul": [ "noise", 0.5]}, 0.0] }]}
+      },
+      "forestness" : 0.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:cold_steppe"
+    },
+    "apply": {
+      "species": "dtstilllife:birch_bush",
+      "density": 0.5,
+      "chance":  {
+        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
+      }
     }
   }
 ]
