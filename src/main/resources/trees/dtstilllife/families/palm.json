@@ -1,0 +1,10 @@
+{
+  "type": "dtstilllife:palm",
+  "common_leaves": "dtstilllife:palm",
+  "common_species": "dtstilllife:palm",
+  "primitive_log": "oak_log",
+  "primitive_stripped_log": "stripped_oak_log",
+  "primary_thickness": 3,
+  "secondary_thickness": 4,
+  "max_branch_radius": 24
+}

@@ -54,6 +54,29 @@
   },
   {
     "select": {
+      "name": "still_life:wooded_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 6,
+          "birch": 1,
+          "pine": 2,
+          "larch": 2
+        }
+      },
+      "density": {
+        "math": { "mul": [ "noise", 2.0 ] }
+      },
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": {
       "name": "still_life:cold_steppe"
     },
     "apply": {
@@ -62,6 +85,199 @@
       "chance":  {
         "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
       }
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:alpine_plains"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 3,
+          "spruce": 5,
+          "larch": 1
+        }
+      },
+      "density": 0.3,
+      "chance":  {
+        "math": { "species":  [["birch_bush", "oak_undergrowth"], {"min": [ "noise", 0.1]}, { "ifgt": [{"mul": ["noise", 0.75]}, 0.6, {"mul": [ "noise", 0.5]}, 0.0] }]}
+      }
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:(evergreen_taiga)|(scorched_taiga)"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch_bush": 3,
+          "spruce": 6,
+          "pine": 2,
+          "birch": 3
+        }
+      },
+      "density": 0.8,
+      "chance":  1.0,
+      "forestness": 0.8
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:taiga_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch_bush": 4,
+          "spruce": 4,
+          "oak_undergrowth": 1
+        }
+      },
+      "density": 0.5,
+      "chance":  {
+        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
+      }
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:alpine_heathlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 8
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:pale_hollow"
+    },
+    "apply": {
+      "species": "pale_oak",
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:arid_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 4
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:birch_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 50,
+          "birch": 130,
+          "spruce": 50,
+          "pine": 8,
+          "beech": 1
+        }
+      },
+      "density": 1.0,
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:bog"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 3,
+          "birch_bush": 9,
+          "birch_dead": 3,
+          "spruce": 8,
+          "pine": 8,
+          "beech": 1
+        }
+      },
+      "density": 1.0,
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:cold_taiga"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 3,
+          "birch_bush": 4,
+          "birch_dead": 3,
+          "spruce": 5,
+          "pine": 2,
+          "larch": 5
+        }
+      },
+      "density": 1.0,
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:cold_taiga_clearings"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch_bush": 4,
+          "spruce": 8,
+          "birch": 4,
+          "larch": 6,
+          "pine": 1,
+          "oak_undergrowth": 4
+        }
+      },
+      "density": 0.5,
+      "chance":  {
+        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
+      }
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:desert_wetlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 2,
+          "birch_bush": 13,
+          "palm": 3
+        }
+      },
+      "density": 1.0,
+      "chance": 1.0,
+      "forestness": 1.0
     }
   }
 ]

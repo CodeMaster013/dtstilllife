@@ -7,14 +7,11 @@
   "growth_rate": 0.9,
   "growth_logic_kit": "conifer",
   "leaves_properties": "dtstilllife:pine",
-  "environment_factors" : {
-    "#c:is_hot": 0.50,
-    "#c:is_wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "primitive_sapling": "minecraft:spruce_sapling",
-  "world_gen_acceptable_soils": [ "snow_like" ],
+  "world_gen_acceptable_soils": ["snow_like"],
   "acceptable_soils": ["dirt_like"],
-  "features" : [
+  "features": [
     "conifer_topper"
   ],
   "lang_overrides": {

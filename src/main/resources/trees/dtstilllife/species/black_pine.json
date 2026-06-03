@@ -7,7 +7,7 @@
   "lowest_branch_height": 7,
   "growth_rate": 0.9,
   "growth_logic_kit": "conifer",
-  "leaves_properties": "dtstilllife:pine",
+  "leaves_properties": "dtstilllife:black_pine",
   "primitive_sapling": "minecraft:spruce_sapling",
   "acceptable_soils": ["dirt_like"],
   "features" : [

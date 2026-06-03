@@ -5,15 +5,67 @@ import com.dtteam.dynamictrees.api.cell.CellKit;
 import com.dtteam.dynamictrees.api.cell.CellNull;
 import com.dtteam.dynamictrees.api.cell.CellSolver;
 import com.dtteam.dynamictrees.api.voxmap.SimpleVoxmap;
-import com.dtteam.dynamictrees.systems.cell.AcaciaLeafCell;
-import com.dtteam.dynamictrees.systems.cell.MatrixCell;
-import com.dtteam.dynamictrees.systems.cell.MetadataCell;
-import com.dtteam.dynamictrees.systems.cell.NormalCell;
+import com.dtteam.dynamictrees.systems.cell.*;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import wexlabs.Mod;
 
 public class CellKits {
+
+    public static final CellKit PALM = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm")) {
+
+        private final Cell palmBranch = new Cell() {
+            @Override
+            public int getValue() {
+                return 5;
+            }
+
+            @Override
+            public int getValueFromSide(Direction side) {
+                return side == Direction.UP ? getValue() : 0;
+            }
+
+        };
+
+        private final Cell[] palmFrondCells = {
+                CellNull.NULL_CELL,
+                new PalmFrondCell(1),
+                new PalmFrondCell(2),
+                new PalmFrondCell(3),
+                new PalmFrondCell(4),
+                new PalmFrondCell(5),
+                new PalmFrondCell(6),
+                new PalmFrondCell(7)
+        };
+
+        private final com.dtteam.dynamictrees.systems.cell.CellKits.BasicSolver palmSolver = new com.dtteam.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0413, 0x0312, 0x0221});
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return palmFrondCells[hydro];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return radius == 3? palmBranch : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return com.dtteam.dynamictrees.systems.cell.LeafClusters.PALM;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return palmSolver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 4;
+        }
+
+    };
 
     public static final CellKit POPLAR = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "poplar")) {
 

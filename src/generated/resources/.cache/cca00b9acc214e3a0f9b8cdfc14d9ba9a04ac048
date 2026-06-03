@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-31T07:57:41.9736795	Item Models: dtstilllife
+// 1.21.1	2026-06-02T21:40:53.3230592	Item Models: dtstilllife
 9ecf4152fe5f0b4f797849113747176684b2f7c1 assets/dtstilllife/models/item/aspen_branch.json
 751e78cb99d31f2ddfd84d04722b751f62504210 assets/dtstilllife/models/item/aspen_seed.json
 22ad7d158b81001353d5c3a027774a31e55ae534 assets/dtstilllife/models/item/baobab_branch.json
@@ -31,6 +31,8 @@ adc3bad942332edead0c40b291aac9560932bb7d assets/dtstilllife/models/item/marula_s
 50a4d04f86bd12ee4ddb5eb285c14e4693af9da8 assets/dtstilllife/models/item/old_oak_seed.json
 1f9425675ff3d713f0dd06fd3d1177c66513087a assets/dtstilllife/models/item/olive_branch.json
 ebaf5aa71b68dd6985b529bccc983084daa5f949 assets/dtstilllife/models/item/olive_seed.json
+68c6183dee60590ec9cb99bb9ee56ec0cf8573d2 assets/dtstilllife/models/item/palm_branch.json
+85b6f06760faadb39fb7ce2bbdec64e435f6dd5a assets/dtstilllife/models/item/palm_seed.json
 ab50525b92af65b881bb1f59f9ee1cb042ce2dd3 assets/dtstilllife/models/item/pine_branch.json
 470c1677054a034820aa8b10b93660dfd8564a9a assets/dtstilllife/models/item/pine_seed.json
 ab50525b92af65b881bb1f59f9ee1cb042ce2dd3 assets/dtstilllife/models/item/poplar_branch.json
