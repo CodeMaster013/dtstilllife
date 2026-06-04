@@ -15,8 +15,12 @@ import org.antlr.v4.runtime.tree.Tree;
 import org.apache.commons.lang3.StringUtils;
 import wexlabs.Mod;
 
-public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends FeatureCanceller {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
+public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends FeatureCanceller {
+    private static final List<String> treeWords = List.of("palm", "tree", "bushes");
     private record TreeSearchResult(boolean isOrContainsTrees, String namespace) {
     }
 
@@ -91,7 +95,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
 
     private boolean isTree(ConfiguredFeature<?, ?> featureConfig, String featureName) {
         //name check may help narrow the cancellations due to still life's usage of /tree/ in the naming convention.
-        return isTree(featureConfig) && (StringUtils.isNotEmpty(featureName) && (featureName.contains("tree") || featureName.contains("bushes")));
+        return isTree(featureConfig) && (StringUtils.isNotEmpty(featureName) && treeWords.stream().anyMatch(featureName::contains));
     }
 
     private boolean isTree(ConfiguredFeature<?, ?> featureConfig) {

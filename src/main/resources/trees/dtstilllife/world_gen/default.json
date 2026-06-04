@@ -126,6 +126,24 @@
   },
   {
     "select": {
+      "name": "still_life:cacti_savanna"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 20,
+          "birch_bush": 20,
+          "juniper": 1
+        }
+      },
+      "density": 0.8,
+      "chance": {
+        "math": "if(simplex(x/64,0,z/64) >= 0.85, 0.85, 0.01)"
+      }
+    }
+  },
+  {
+    "select": {
       "name": "still_life:cold_taiga"
     },
     "apply": {
@@ -178,8 +196,9 @@
         }
       },
       "density": 1.0,
-      "chance": 1.0,
-      "forestness": 1.0
+      "chance": {
+        "math": "if(simplex(x/160,0,z/160) > 0.84, 0.4, 0.01)"
+      }
     }
   },
   {
@@ -256,15 +275,16 @@
       "species": {
         "random": {
           "baobab": 1,
-          "palm": 50,
+          "palm": 80,
           "marula": 100,
           "acacia": 700,
           "oak_undergrowth": 100,
           "oak_bush_large": 50
         }
       },
-      "density": 0.4,
-      "chance": 0.5
+      "density": 0.35,
+      "chance": "if(is('oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) >= 0.30, simplex(x/90,0,z/90), 0.20))"
+
     }
   },
   {
@@ -581,6 +601,24 @@
   },
   {
     "select": {
+      "name": "still_life:painted_xeric_scrubland"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "joshua": 1,
+          "birch_bush": 2,
+          "oak_undergrowth": 2
+        }
+      },
+      "density": 0.6,
+      "chance": {
+        "math": "if(simplex(x/160,0,z/160) >= 0.8, simplex(x/160,0,z/160) * 0.35, 0.01)"
+      }
+    }
+  },
+  {
+    "select": {
       "name": "still_life:pine_woods"
     },
     "apply": {
@@ -605,13 +643,15 @@
     "apply": {
       "species": {
         "random": {
-          "birch_bush": 1,
-          "oak_undergrowth": 1,
-          "palm": 6
+          "birch_bush": 4,
+          "oak_undergrowth": 4,
+          "palm": 1
         }
       },
-      "density": 0.4,
-      "chance": 0.5
+      "density": 0.6,
+      "chance": {
+        "math": "if(is('birch_bush','oak_undergrowth'), 0.45, if(simplex(x/64,0,z/64) >= 0.75, 0.5, 0))"
+      }
     }
   },
   {
@@ -835,6 +875,29 @@
   },
   {
     "select": {
+      "name": "still_life:tropical_thorn_clearings"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "palm": 50,
+          "marula": 200,
+          "acacia": 700,
+          "oak_undergrowth": 10,
+          "oak_bush_large": 10,
+          "birch_bush": 100,
+          "mahogany": 300
+        }
+      },
+      "density": 0.55,
+      "chance": {
+        "math": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/75,0,z) > 0.4, 1, 0.02))"
+      }
+    }
+  },
+  {
+    "select": {
       "name": "still_life:tropical_wetlands"
     },
     "apply": {
@@ -998,6 +1061,26 @@
       },
       "density": 0.4,
       "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:yucca_scrubland"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 50,
+          "oak_bush_large": 50,
+          "birch_bush": 40,
+          "joshua": 10,
+          "juniper": 1
+        }
+      },
+      "density": 0.8,
+      "chance": {
+        "math": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), if(simplex(x/24,0,z/24) >= 0.55, 1.0, 0.01), 0.8)"
+      }
     }
   }
 ]
