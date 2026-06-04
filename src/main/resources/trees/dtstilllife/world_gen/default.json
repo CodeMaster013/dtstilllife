@@ -1,90 +1,12 @@
 [
   {
     "select": {
-      "name": "still_life:temperate_mixed_forest"
-    },
-    "apply": {
-      "species": {
-        "random": {
-          "old_oak": 4,
-          "oak_undergrowth": 1,
-          "birch_bush": 1,
-          "spruce_bush": 1,
-          "spruce": 16,
-          "birch": 9,
-          "pine": 4,
-          "beech": 3
-        }
-      },
-      "chance": 1.0,
-      "density": {
-        "math": {
-          "mul": [ "noise", 2.0 ]
-        }
-      },
-      "multipass": true
-    }
-  },
-  {
-    "select": {
-      "name": "still_life:mixed_forest_steppe"
-    },
-    "apply": {
-      "species": {
-        "random": {
-          "oak": 4,
-          "old_oak": 2,
-          "oak_undergrowth": 1,
-          "birch_bush": 1,
-          "spruce_bush": 1,
-          "spruce": 3,
-          "birch": 6,
-          "pine": 2,
-          "beech": 2
-        }
-      },
-      "density": {
-        "math": { "mul": [ "noise", 2.0 ] }
-      },
-      "chance":  {
-        "math": { "species":  [["birch_bush", "spruce_bush", "oak_undergrowth"], {"min": [ "noise", 0.5]}, { "ifgt": ["noise", 0.8, {"mul": [ "noise", 0.5]}, 0.0] }]}
-      },
-      "forestness" : 0.0
-    }
-  },
-  {
-    "select": {
-      "name": "still_life:wooded_highlands"
-    },
-    "apply": {
-      "species": {
-        "random": {
-          "oak_undergrowth": 1,
-          "birch_bush": 1,
-          "spruce_bush": 1,
-          "spruce": 6,
-          "birch": 1,
-          "pine": 2,
-          "larch": 2
-        }
-      },
-      "density": {
-        "math": { "mul": [ "noise", 2.0 ] }
-      },
-      "chance": 1.0,
-      "forestness" : 1.0
-    }
-  },
-  {
-    "select": {
       "name": "still_life:cold_steppe"
     },
     "apply": {
       "species": "dtstilllife:birch_bush",
       "density": 0.5,
-      "chance":  {
-        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
-      }
+      "chance":  1.0
     }
   },
   {
@@ -101,27 +23,7 @@
         }
       },
       "density": 0.3,
-      "chance":  {
-        "math": { "species":  [["birch_bush", "oak_undergrowth"], {"min": [ "noise", 0.1]}, { "ifgt": [{"mul": ["noise", 0.75]}, 0.6, {"mul": [ "noise", 0.5]}, 0.0] }]}
-      }
-    }
-  },
-  {
-    "select": {
-      "name": "still_life:(evergreen_taiga)|(scorched_taiga)"
-    },
-    "apply": {
-      "species": {
-        "random": {
-          "birch_bush": 3,
-          "spruce": 6,
-          "pine": 2,
-          "birch": 3
-        }
-      },
-      "density": 0.8,
-      "chance":  1.0,
-      "forestness": 0.8
+      "chance": 1.0
     }
   },
   {
@@ -138,7 +40,7 @@
       },
       "density": 0.5,
       "chance":  {
-        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
+        "math": "min(noise() * 0.25, 0.12)"
       }
     }
   },
@@ -259,7 +161,7 @@
       },
       "density": 0.5,
       "chance":  {
-        "math": {"min": [ {"mul": ["noise", 0.25]}, 0.12]}
+        "math": "min(noise() * 0.25, 0.12)"
       }
     }
   },
@@ -279,5 +181,825 @@
       "chance": 1.0,
       "forestness": 1.0
     }
+  },
+  {
+    "select": {
+      "name": "still_life:dry_tropical_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "acacia": 7
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:(evergreen_taiga)|(scorched_taiga)"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch_bush": 3,
+          "spruce": 6,
+          "pine": 2,
+          "birch": 3
+        }
+      },
+      "density": 0.8,
+      "chance":  1.0,
+      "forestness": 0.8
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:fen"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "pine": 2,
+          "birch": 3,
+          "spruce": 4,
+          "birch_bush": 5
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:flooded_grasslands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 10
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:flooded_savanna"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "palm": 50,
+          "marula": 100,
+          "acacia": 700,
+          "oak_undergrowth": 100,
+          "oak_bush_large": 50
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:grassland_savanna"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "marula": 20,
+          "acacia": 80
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:humid_savanna"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "palm": 10,
+          "marula": 20,
+          "acacia": 80,
+          "oak_undergrowth": 10,
+          "oak_bush_large": 5,
+          "mahogany": 20
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:larch_woodlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce": 12,
+          "birch": 9,
+          "pine": 4,
+          "larch": 4
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:lush_tundra"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 10
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mangrove_marsh"
+    },
+    "apply": {
+      "species": "mangrove",
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 3,
+          "birch_bush": 5,
+          "cypress": 5,
+          "oak_undergrowth": 5,
+          "spruce": 5,
+          "old_oak": 5,
+          "black_pine": 1,
+          "olive": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 3,
+          "cedar": 8,
+          "birch_bush": 8
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_shrubland"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 3,
+          "birch_bush": 5,
+          "cypress": 5,
+          "oak_undergrowth": 5,
+          "spruce": 5,
+          "old_oak": 5,
+          "black_pine": 1,
+          "olive": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_steppe"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 10,
+          "birch_bush": 20,
+          "cypress": 1,
+          "oak_undergrowth": 10,
+          "oak_bush_large": 10,
+          "olive": 2
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_swamp"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "old_oak": 10,
+          "oak": 40,
+          "cedar": 15,
+          "birch_bush": 10,
+          "cypress": 50,
+          "oak_undergrowth": 20,
+          "oak_bush_large": 20,
+          "spruce": 50,
+          "olive": 30,
+          "black_pine": 10,
+          "willow": 60,
+          "willow_dead": 40
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mediterranean_wooded_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 1,
+          "birch_bush": 10,
+          "oak_undergrowth": 10,
+          "spruce": 20,
+          "fir": 30,
+          "black_pine": 50
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mire"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "pine": 1,
+          "birch": 90,
+          "birch_bush": 10,
+          "oak_undergrowth": 30,
+          "spruce": 20,
+          "willow": 60,
+          "willow_dead": 20,
+          "spruce_dead": 30,
+          "birch_dead": 30
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:mixed_forest_steppe"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 4,
+          "old_oak": 2,
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 3,
+          "birch": 6,
+          "pine": 2,
+          "beech": 2
+        }
+      },
+      "density": {
+        "math": "noise() * 2.0"
+      },
+      "chance":  {
+        "math": "if(is('birch_bush','spruce_bush','oak_undergrowth'), 1, if(simplex(x/150,0,z/150) >= 0.64, simplex(x/150,0,z/150) * 0.35, 0.01))"
+      },
+      "forestness" : 0.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:monsoon_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "palm": 3,
+          "baobab": 1,
+          "acacia": 400,
+          "marula": 200,
+          "mahogany": 300,
+          "oak_undergrowth": 300,
+          "birch_bush": 300,
+          "oak_bush_large": 300
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:old_growth_temperate_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "spruce": 3,
+          "beech": 6,
+          "oak": 4,
+          "old_oak": 1,
+          "pine": 1,
+          "birch": 5,
+          "birch_bush": 1,
+          "oak_bush_large": 1,
+          "oak_undergrowth": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:old_growth_tropical_rainforest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "mahogany": 8,
+          "kapok": 16,
+          "marula": 1,
+          "teak": 12,
+          "birch_bush": 2,
+          "oak_undergrowth": 2
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:pine_woods"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "spruce": 12,
+          "pine": 21,
+          "birch": 4,
+          "beech": 1,
+          "birch_bush": 6,
+          "oak_undergrowth": 2
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:savanna_beach"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch_bush": 1,
+          "oak_undergrowth": 1,
+          "palm": 6
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:savanna_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "marula": 3,
+          "acacia": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:semiarid_desert"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 3,
+          "birch_bush": 5,
+          "cypress": 5,
+          "oak_undergrowth": 5,
+          "spruce": 5,
+          "old_oak": 5,
+          "black_pine": 1,
+          "olive": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:shrub_steppe"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "cedar": 1,
+          "birch_bush": 8,
+          "oak_undergrowth": 8,
+          "olive": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:snowy_boreal_alpine_tundra"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:taiga_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "spruce": 7,
+          "oak_undergrowth": 1,
+          "birch_bush": 5
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:temperate_marsh"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "birch": 1,
+          "birch_bush": 11,
+          "oak_undergrowth": 5,
+          "oak_bush_large": 5,
+          "willow_dead": 1,
+          "birch_dead": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:temperate_mixed_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "old_oak": 4,
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 16,
+          "birch": 9,
+          "pine": 4,
+          "beech": 3
+        }
+      },
+      "chance": 1.0,
+      "density": {
+        "math": {
+          "mul": [ "noise()", 2.0 ]
+        }
+      },
+      "multipass": true
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:temperate_swamp"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "willow": 120,
+          "willow_dead": 80,
+          "oak_undergrowth": 40,
+          "birch_bush": 60,
+          "beech": 20,
+          "old_oak": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:tropical_beach"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "palm": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:tropical_dry_forest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "palm": 50,
+          "marula": 200,
+          "acacia": 700,
+          "oak_undergrowth": 10,
+          "oak_bush_large": 10,
+          "birch_bush": 100,
+          "mahogany": 300
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:tropical_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:tropical_rainforest"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "mahogany": 10,
+          "oak_undergrowth": 3,
+          "birch_bush": 1,
+          "teak": 3,
+          "acacia": 1,
+          "palm": 3,
+          "kapok": 8,
+          "marula": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:tropical_wetlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "palm": 3,
+          "baobab": 1,
+          "acacia": 400,
+          "marula": 200,
+          "mahogany": 300,
+          "oak_undergrowth": 300,
+          "birch_bush": 300,
+          "oak_bush_large": 300
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:warm_temperate_clearings"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 3,
+          "birch_bush": 1,
+          "spruce": 5,
+          "olive": 1,
+          "oak": 3,
+          "old_oak": 1,
+          "pine": 1,
+          "black_pine": 2,
+          "beech": 3,
+          "cypress": 2,
+          "poplar": 3,
+          "linden": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:warm_temperate_woodlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 3,
+          "birch_bush": 1,
+          "spruce": 5,
+          "olive": 1,
+          "oak": 3,
+          "old_oak": 1,
+          "pine": 1,
+          "black_pine": 2,
+          "beech": 3,
+          "cypress": 2,
+          "poplar": 3,
+          "linden": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:wooded_highlands"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "birch_bush": 1,
+          "spruce_bush": 1,
+          "spruce": 6,
+          "birch": 1,
+          "pine": 2,
+          "larch": 2
+        }
+      },
+      "density": {
+        "math": "noise() * 2.0"
+      },
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:wooded_mediterranean_steppe"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "poplar": 2,
+          "cypress": 2,
+          "olive": 10,
+          "black_pine": 4,
+          "fir": 1,
+          "birch_bush": 2,
+          "oak_undergrowth": 2,
+          "cedar": 3
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:wooded_savanna"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "baobab": 1,
+          "marula": 100,
+          "acacia": 700,
+          "oak_undergrowth": 100,
+          "oak_bush_large": 50
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:wooded_semiarid_desert"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "oak_bush_large": 1,
+          "birch_bush": 8
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
+  },
+  {
+    "select": {
+      "name": "still_life:wooded_tundra"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "oak_undergrowth": 1,
+          "oak_bush_large": 1,
+          "birch_bush": 8,
+          "larch": 6,
+          "spruce": 1
+        }
+      },
+      "density": 0.4,
+      "chance": 0.5
+    }
   }
 ]
+
+
