@@ -1,0 +1,15 @@
+{
+  "family": "dtstilllife:sagebrush",
+  "signal_energy": 7.0,
+  "growth_logic_kit": "dtstilllife:shrub",
+  "up_probability": 9,
+  "lowest_branch_height": 1,
+  "soil_longevity": 1,
+  "max_branch_radius": 4,
+  "growth_rate": 1.0,
+  "leaves_properties": "dtstilllife:sagebrush",
+  "acceptable_soils": [ "dirt_like" ],
+  "lang_overrides": {
+    "seed": "Sagebrush Seed"
+  }
+}

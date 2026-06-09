@@ -14,6 +14,10 @@
     },
     {
       "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/cherry_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
       "resource": "minecraft:block/stripped_mangrove_log_top"
     },
     {

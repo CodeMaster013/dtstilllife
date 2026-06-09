@@ -133,6 +133,7 @@
         "random": {
           "oak_undergrowth": 20,
           "birch_bush": 20,
+          "sagebrush": 25,
           "juniper": 1
         }
       },
@@ -608,7 +609,8 @@
         "random": {
           "joshua": 1,
           "birch_bush": 2,
-          "oak_undergrowth": 2
+          "oak_undergrowth": 2,
+          "sagebrush": 4
         }
       },
       "density": 0.6,
@@ -1074,6 +1076,7 @@
           "oak_bush_large": 50,
           "birch_bush": 40,
           "joshua": 10,
+          "sagebrush": 20,
           "juniper": 1
         }
       },

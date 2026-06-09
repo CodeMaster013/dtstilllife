@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-02T22:23:50.7513815	Block States: dtstilllife
+// 1.21.1	2026-06-04T22:49:10.8099359	Block States: dtstilllife
 3d57de2bf111b84abab08560762f956f31f0a16a assets/dtstilllife/blockstates/aspen_branch.json
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtstilllife/blockstates/aspen_leaves.json
 2716ce2b28c048422451af89e839f8c76e26d02a assets/dtstilllife/blockstates/aspen_sapling.json
@@ -72,6 +72,10 @@ ee24d310f97c683da7dd242391074b9d0f05106f assets/dtstilllife/blockstates/poplar_r
 ab47df46795bc4ee1d88b446b0305ee474c1ed9c assets/dtstilllife/blockstates/redwood_leaves.json
 8ef9b7dea03da7a379d4453011e64d52a6c1118e assets/dtstilllife/blockstates/redwood_root.json
 7385f96d36612d77815a27c2ce04d1d7eba3bbf8 assets/dtstilllife/blockstates/redwood_sapling.json
+10c5f854ad9ee8e118cf1dac07bfd56119e57d02 assets/dtstilllife/blockstates/sagebrush_branch.json
+a653d3be879b872a06ec94c1deb51e4f5ba2d02a assets/dtstilllife/blockstates/sagebrush_leaves.json
+311f5973594c152fdf3a8547e87de6c9ae35afe2 assets/dtstilllife/blockstates/sagebrush_root.json
+d5675437bdf700ac0ef5dfda495290e378bd1556 assets/dtstilllife/blockstates/sagebrush_sapling.json
 ab47df46795bc4ee1d88b446b0305ee474c1ed9c assets/dtstilllife/blockstates/spruce_bush_leaves.json
 1e09ebd41ab0f8e7975adaddb1a9b69441a5ddc1 assets/dtstilllife/blockstates/stripped_kapok_branch.json
 a7b3805f3958e13b0883894cc79f9ab71c509f10 assets/dtstilllife/blockstates/stripped_larch_branch.json
@@ -125,6 +129,8 @@ a3e6d68db0c3815c08b0d31f4a9c1e307961d67a assets/dtstilllife/models/block/pine_ro
 a3e6d68db0c3815c08b0d31f4a9c1e307961d67a assets/dtstilllife/models/block/poplar_root.json
 3b93d56648e3fbd689ab0bd2defb6818fc8d379a assets/dtstilllife/models/block/redwood_branch.json
 289e02953ce4b59e49e4336b3ce4c211a6807363 assets/dtstilllife/models/block/redwood_root.json
+b678845d99d52c251333c6e698ed56111fdf1688 assets/dtstilllife/models/block/sagebrush_branch.json
+c3ef8990f880b6e1f72965ea636ddaaf3d42e6f5 assets/dtstilllife/models/block/sagebrush_root.json
 bfec5d33d42ffa0a33b3f91c532cba4a414c1023 assets/dtstilllife/models/block/saplings/aspen.json
 b0610c97a6bb97ec12b471dbe4520d2ebef06e59 assets/dtstilllife/models/block/saplings/baobab.json
 c9b3654e80f73348aeb8d44109c5e4717ee8650b assets/dtstilllife/models/block/saplings/beech.json
@@ -145,6 +151,7 @@ bcaaa73d253888641290e18edf5e9ed4f6ad270a assets/dtstilllife/models/block/sapling
 b93c490c0b6391b4eeecd23954dd610d7e0e74d0 assets/dtstilllife/models/block/saplings/pine.json
 b93c490c0b6391b4eeecd23954dd610d7e0e74d0 assets/dtstilllife/models/block/saplings/poplar.json
 91bd932ff03901c011037df669a4280ad5854579 assets/dtstilllife/models/block/saplings/redwood.json
+5fc12f39a357c5d502e3c9a131a7dd89ca2277b4 assets/dtstilllife/models/block/saplings/sagebrush.json
 28dce21579884ad6452ec99314616ae8fc812ec4 assets/dtstilllife/models/block/saplings/teak.json
 d3611c232e366ac995da220c2da6d34f59bd67ba assets/dtstilllife/models/block/saplings/willow.json
 734394e0a622c9f9d41fe6902b9a33ce1f76f4ef assets/dtstilllife/models/block/stripped_kapok_branch.json

@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-02T21:40:53.3230592	Item Models: dtstilllife
+// 1.21.1	2026-06-04T22:10:01.385769	Item Models: dtstilllife
 9ecf4152fe5f0b4f797849113747176684b2f7c1 assets/dtstilllife/models/item/aspen_branch.json
 751e78cb99d31f2ddfd84d04722b751f62504210 assets/dtstilllife/models/item/aspen_seed.json
 22ad7d158b81001353d5c3a027774a31e55ae534 assets/dtstilllife/models/item/baobab_branch.json
@@ -39,6 +39,8 @@ ab50525b92af65b881bb1f59f9ee1cb042ce2dd3 assets/dtstilllife/models/item/poplar_b
 b115452c92c8bf6ddcff8fdbb301806ceeb52321 assets/dtstilllife/models/item/poplar_seed.json
 63278a755c40f92e99aa21e6b9eaee34a74f22d2 assets/dtstilllife/models/item/redwood_branch.json
 a409b0fd7fce37ab7e2ce77cdfb5e00d70331785 assets/dtstilllife/models/item/redwood_seed.json
+6ddc5cab33538c4025424808259635178e33cb3c assets/dtstilllife/models/item/sagebrush_branch.json
+3ff996339cf364699893e3d06cdf9226b26a256a assets/dtstilllife/models/item/sagebrush_seed.json
 1f206e3163b7419d56ee810e2f199c512b9c273c assets/dtstilllife/models/item/tall_mahogany_seed.json
 68c6183dee60590ec9cb99bb9ee56ec0cf8573d2 assets/dtstilllife/models/item/teak_branch.json
 50cb1b6029c31639f4cb9089cdc947de264a1ee7 assets/dtstilllife/models/item/teak_seed.json

@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-02T22:23:50.7493797	Loot Tables
+// 1.21.1	2026-06-04T22:10:01.3817703	Loot Tables
 18c3ea705431de928a0ef21a91a6992390be6263 data/dtstilllife/loot_table/blocks/aspen_leaves.json
 399fc3feaaaa47bac75d5da25e44bd6fa177373e data/dtstilllife/loot_table/blocks/baobab_leaves.json
 c5bfd382ad854b367eddd27d6656fe6516391f9a data/dtstilllife/loot_table/blocks/beech_leaves.json
@@ -21,6 +21,7 @@ b1641a45cab6df8d90bb4abf681d4e399e80971b data/dtstilllife/loot_table/blocks/palm
 48416bf094bb0609fb12d0c901b68dd69d07738c data/dtstilllife/loot_table/blocks/pine_leaves.json
 0432d9f16dba4c1898ef85a87455e6ee77aa4312 data/dtstilllife/loot_table/blocks/poplar_leaves.json
 8a256aac6e0927c5758df95f08842d24c46f8672 data/dtstilllife/loot_table/blocks/redwood_leaves.json
+f83376b9add3d32e6c5cc912ebb0ab3c4a0caed4 data/dtstilllife/loot_table/blocks/sagebrush_leaves.json
 d0319fec5d83f8d43c805a13125d355e8988a6cf data/dtstilllife/loot_table/blocks/spruce_bush_leaves.json
 d2884f5425450e549ca9a2cf54f42e4381729942 data/dtstilllife/loot_table/blocks/teak_leaves.json
 68b908da2e50da7d287d542499364c536da731ea data/dtstilllife/loot_table/blocks/willow_leaves.json
@@ -44,6 +45,7 @@ af25eb2ce9980885f94db54ea4f85de26b35f3e7 data/dtstilllife/loot_table/trees/branc
 38993dab14a21c34ff7e67d7db525e400a1df098 data/dtstilllife/loot_table/trees/branches/pine.json
 662bd429c50a6fef1884546dfcf589417ee03320 data/dtstilllife/loot_table/trees/branches/poplar.json
 7297ca224504e0f9638704d336510d25c25b29ff data/dtstilllife/loot_table/trees/branches/redwood.json
+4cb1a2871bb45d773ca199c39d4ff2cdb73ded37 data/dtstilllife/loot_table/trees/branches/sagebrush.json
 19ca7a5573a4650b02c809e20a31c80f993fda0b data/dtstilllife/loot_table/trees/branches/stripped_kapok.json
 29ca7b7f1b6677d69de68a22d51797b3e2672f0c data/dtstilllife/loot_table/trees/branches/stripped_larch.json
 2f03e889e9a655257574a89699ff4fe33b452051 data/dtstilllife/loot_table/trees/branches/stripped_mahogany.json
@@ -76,6 +78,7 @@ eb66577ff276e9f39a292b08a7a6047a0fa8ba52 data/dtstilllife/loot_table/trees/leave
 9bbff551ecf51adcabbdbaca7e097bc963396732 data/dtstilllife/loot_table/trees/leaves/pine.json
 efe7047df557718a17bb5c7994b6b424c5bcfd63 data/dtstilllife/loot_table/trees/leaves/poplar.json
 4d162b60db0a0e0c55bbf185dc3455eaaf21107a data/dtstilllife/loot_table/trees/leaves/redwood.json
+b4f9409dc69736e470b248b3f718b93802740328 data/dtstilllife/loot_table/trees/leaves/sagebrush.json
 32238a40d6afe4951ad49d1d41d2539190fbeb69 data/dtstilllife/loot_table/trees/leaves/spruce_bush.json
 a63e84ceb7774857df4bd78956238729684e4f06 data/dtstilllife/loot_table/trees/leaves/teak.json
 76cd90d900baaf787fb6d12ea752fb5337561f6b data/dtstilllife/loot_table/trees/leaves/willow.json
@@ -99,6 +102,7 @@ cff5ac232128114698ecaeb76b700adfe01dc13c data/dtstilllife/loot_table/trees/volun
 b59591f2f421a0ae36cd66ff0fbf13b8aa41a00b data/dtstilllife/loot_table/trees/voluntary/pine.json
 5ef91f994b2c49b2bc6787557ff72cc29a4ef7e0 data/dtstilllife/loot_table/trees/voluntary/poplar.json
 d20be8c8ced80f266ccff0e9204e880d0ee99f31 data/dtstilllife/loot_table/trees/voluntary/redwood.json
+e0cbae3e8bb6f31652c48dccd6ff8a24040ca8e6 data/dtstilllife/loot_table/trees/voluntary/sagebrush.json
 d620fcbc8e97d5a18e99aa1c627f8ea0f87de29e data/dtstilllife/loot_table/trees/voluntary/tall_mahogany.json
 05b37f40301d6d759efb7673b7567446596e590f data/dtstilllife/loot_table/trees/voluntary/teak.json
 ea6d5a52be8b3ff48cc09210d89c09d2c3305043 data/dtstilllife/loot_table/trees/voluntary/willow.json

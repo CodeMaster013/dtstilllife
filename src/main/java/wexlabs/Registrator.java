@@ -6,7 +6,6 @@ import com.dtteam.dynamictrees.event.RegistryEvent;
 import com.dtteam.dynamictrees.event.TypeRegistryEvent;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
-import com.dtteam.dynamictrees.systems.growthlogic.PalmGrowthLogic;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.tree.species.Species;
 import net.minecraft.resources.ResourceLocation;
@@ -38,7 +37,8 @@ public class Registrator {
     public static final GrowthLogicKit CANOPY_GROWTH_LOGIC = new CanopyGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "canopy"));
     public static final GrowthLogicKit JUNIPER_GROWTH_LOGIC = new JuniperGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "juniper"));
     public static final GrowthLogicKit VARIATE_HEIGHT_GROWTH_LOGIC = new VariateHeightGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "variate_height"));
-    public static final GrowthLogicKit PALM_GROWTH_LOGIC = new DiagonalPalmGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm"));
+    public static final GrowthLogicKit PALM_GROWTH_LOGIC = new LeaningPalmGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm"));
+    public static final GrowthLogicKit SHRUB_GROWTH_LOGIC = new ShrubGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "shrub"));
 
 
     @SubscribeEvent
@@ -60,7 +60,7 @@ public class Registrator {
     @SubscribeEvent
     public static void onGrowthLogicKitRegistry(final RegistryEvent<GrowthLogicKit> event) {
         if (event.isEntryOfType(GrowthLogicKit.class)){
-           event.getRegistry().registerAll(PALM_GROWTH_LOGIC, VARIATE_HEIGHT_GROWTH_LOGIC, JUNIPER_GROWTH_LOGIC, LONG_BRANCH_CANOPY_GROWTH_LOGIC, UP_AND_OUT_GROWTH_LOGIC, BAOBAB_GROWTH_LOGIC, CYPRESS_GROWTH_LOGIC, REDWOOD_GROWTH_LOGIC, SMALL_REDWOOD_GROWTH_LOGIC, WILLOW_GROWTH_LOGIC, CANOPY_GROWTH_LOGIC);
+           event.getRegistry().registerAll(SHRUB_GROWTH_LOGIC, PALM_GROWTH_LOGIC, VARIATE_HEIGHT_GROWTH_LOGIC, JUNIPER_GROWTH_LOGIC, LONG_BRANCH_CANOPY_GROWTH_LOGIC, UP_AND_OUT_GROWTH_LOGIC, BAOBAB_GROWTH_LOGIC, CYPRESS_GROWTH_LOGIC, REDWOOD_GROWTH_LOGIC, SMALL_REDWOOD_GROWTH_LOGIC, WILLOW_GROWTH_LOGIC, CANOPY_GROWTH_LOGIC);
         }
 
     }
@@ -78,7 +78,7 @@ public class Registrator {
     @SubscribeEvent
     public static void onCellKitRegistry(final RegistryEvent<CellKit> event) {
         if (event.isEntryOfType(CellKit.class)){
-            event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW);
+            event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW, CellKits.SAGEBRUSH);
         }
     }
 }

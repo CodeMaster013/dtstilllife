@@ -12,6 +12,48 @@ import wexlabs.Mod;
 
 public class CellKits {
 
+    public static final CellKit SAGEBRUSH = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "sagebrush")) {
+        private final Cell branchCell = new NormalCell(5);
+
+        private final Cell[] leafCells = {
+                CellNull.NULL_CELL,
+                new NormalCell(1),
+                new NormalCell(2),
+                new NormalCell(3),
+                new NormalCell(4),
+                new NormalCell(5),
+                new NormalCell(6),
+                new NormalCell(7)
+        };
+
+        private final com.dtteam.dynamictrees.systems.cell.CellKits.BasicSolver solver = new com.dtteam.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
+
+        @Override
+        public Cell getCellForLeaves(int distance) {
+            return this.leafCells[distance];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return radius == 1 ? this.branchCell : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return this.solver;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return LeafClusters.SAGEBRUSH;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 2;
+        }
+    };
+
     public static final CellKit PALM = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm")) {
 
         private final Cell palmBranch = new Cell() {
@@ -278,7 +320,6 @@ public class CellKits {
             return this.solver;
         }
 
-        // TODO: Willow leaf cluster.
         @Override
         public SimpleVoxmap getLeafCluster() {
             return LeafClusters.WILLOW;
