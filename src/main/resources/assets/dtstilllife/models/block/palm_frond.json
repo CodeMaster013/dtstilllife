@@ -1,6 +1,6 @@
 {
   "loader": "dynamictrees:medium_palm_fronds",
   "textures": {
-    "frond": "dtbwg:block/palm_frond"
+    "frond": "dtstilllife:block/palm_frond"
   }
 }

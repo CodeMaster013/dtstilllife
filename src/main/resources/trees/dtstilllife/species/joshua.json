@@ -16,10 +16,7 @@
   "leaves_properties": "dtstilllife:joshua",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "#c:is_wet": 0.75,
-    "#c:is_cold": 0.75
-  },
+  "preferred_climate": "arid",
   "perfect_biomes": { "tags": [ "#c:is_desert", "#minecraft:is_overworld" ] },
   "acceptable_soils": ["dirt_like", "sand_like"],
   "features" : []

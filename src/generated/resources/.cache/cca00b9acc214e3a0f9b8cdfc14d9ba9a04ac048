@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-04T22:10:01.385769	Item Models: dtstilllife
+// 1.21.1	2026-06-09T23:20:59.400382	Item Models: dtstilllife
 9ecf4152fe5f0b4f797849113747176684b2f7c1 assets/dtstilllife/models/item/aspen_branch.json
 751e78cb99d31f2ddfd84d04722b751f62504210 assets/dtstilllife/models/item/aspen_seed.json
 22ad7d158b81001353d5c3a027774a31e55ae534 assets/dtstilllife/models/item/baobab_branch.json
@@ -46,3 +46,6 @@ a409b0fd7fce37ab7e2ce77cdfb5e00d70331785 assets/dtstilllife/models/item/redwood_
 50cb1b6029c31639f4cb9089cdc947de264a1ee7 assets/dtstilllife/models/item/teak_seed.json
 a32c202fbb6da4e7a874208dd9cec27baf149104 assets/dtstilllife/models/item/willow_branch.json
 eaa256c5c2507c56db169291e1970c92226d64b1 assets/dtstilllife/models/item/willow_seed.json
+fe2b74afefe052cef5a1e21e84f87b31c02f6987 assets/dtstilllife/models/item/yucca_branch.json
+796a540921d83df9cd1ef86363938492405c9848 assets/dtstilllife/models/item/yucca_seed.json
+53ace1cb095db1c03de0cfe075d1a8a0a71b5fce assets/dtstilllife/models/item/yucca_small_seed.json

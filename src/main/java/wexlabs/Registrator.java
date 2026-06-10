@@ -78,7 +78,7 @@ public class Registrator {
     @SubscribeEvent
     public static void onCellKitRegistry(final RegistryEvent<CellKit> event) {
         if (event.isEntryOfType(CellKit.class)){
-            event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW, CellKits.SAGEBRUSH);
+            event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW, CellKits.SAGEBRUSH, CellKits.SPARSE);
         }
     }
 }

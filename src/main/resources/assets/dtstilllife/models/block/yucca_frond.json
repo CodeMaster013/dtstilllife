@@ -1,0 +1,6 @@
+{
+  "loader": "dynamictrees:small_palm_fronds",
+  "textures": {
+    "frond": "dtstilllife:block/yucca_frond"
+  }
+}

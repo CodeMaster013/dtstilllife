@@ -51,7 +51,8 @@
     "apply": {
       "species": {
         "random": {
-          "oak_undergrowth": 1,
+          "oak_undergrowth": 2,
+          "larch": 1,
           "birch_bush": 8
         }
       },
@@ -1077,7 +1078,8 @@
           "birch_bush": 40,
           "joshua": 10,
           "sagebrush": 20,
-          "juniper": 1
+          "juniper": 1,
+          "yucca": 3
         }
       },
       "density": 0.8,

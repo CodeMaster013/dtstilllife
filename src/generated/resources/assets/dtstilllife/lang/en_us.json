@@ -22,6 +22,7 @@
   "block.dtstilllife.sagebrush_branch": "Sagebrush Tree",
   "block.dtstilllife.teak_branch": "Teak Tree",
   "block.dtstilllife.willow_branch": "Willow Tree",
+  "block.dtstilllife.yucca_branch": "Yucca Tree",
   "item.dtstilllife.aspen_seed": "Aspen Tree Seed",
   "item.dtstilllife.baobab_seed": "Baobab Seed",
   "item.dtstilllife.beech_seed": "Beech Nut",
@@ -46,6 +47,8 @@
   "item.dtstilllife.tall_mahogany_seed": "Mahogany Pod",
   "item.dtstilllife.teak_seed": "Teak Seed",
   "item.dtstilllife.willow_seed": "Willow Catkin",
+  "item.dtstilllife.yucca_seed": "Yucca Seed",
+  "item.dtstilllife.yucca_small_seed": "Yucca Small Seed",
   "species.dtstilllife.aspen": "Aspen",
   "species.dtstilllife.aspen_dead": "Aspen Dead",
   "species.dtstilllife.aspen_tall": "Aspen Tall",
@@ -83,5 +86,7 @@
   "species.dtstilllife.tall_mahogany": "Tall Mahogany",
   "species.dtstilllife.teak": "Teak",
   "species.dtstilllife.willow": "Willow",
-  "species.dtstilllife.willow_dead": "Willow Dead"
+  "species.dtstilllife.willow_dead": "Willow Dead",
+  "species.dtstilllife.yucca": "Yucca",
+  "species.dtstilllife.yucca_small": "Yucca Small"
 }

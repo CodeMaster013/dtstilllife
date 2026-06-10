@@ -331,4 +331,37 @@ public class CellKits {
         }
     };
 
+    public static final CellKit SPARSE = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "sparse")) {
+
+        private final Cell sparseBranch = new SparseBranchCell();
+        private final Cell sparseLeaves = new NormalCell(1);
+
+        private final CellSolver solver = new  com.dtteam.dynamictrees.systems.cell.CellKits.BasicSolver(new short[] {0x0211});
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return hydro > 0 ? sparseLeaves : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return radius == 1 ? sparseBranch : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return LeafClusters.SPARSE;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return solver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 1;
+        }
+
+    };
 }
