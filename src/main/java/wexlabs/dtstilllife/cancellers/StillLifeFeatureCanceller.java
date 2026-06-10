@@ -10,6 +10,7 @@ import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import org.antlr.v4.runtime.tree.Tree;
 import org.apache.commons.lang3.StringUtils;
@@ -34,8 +35,10 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
     private TreeSearchResult containsTrees(FeatureConfiguration featureConfig, BiomePropertySelectors.NormalFeatureCancellation featureCancellations){
         if (featureConfig instanceof RandomFeatureConfiguration randomFeatureConfig) { //Handles random_selector
             return this.containsTrees(randomFeatureConfig, featureCancellations);
-        } else  if (featureConfig instanceof RandomPatchConfiguration randomPatchConfig) { //handles random_patch
+        } else if (featureConfig instanceof RandomPatchConfiguration randomPatchConfig) { //handles random_patch
             return this.containsTrees(randomPatchConfig, featureCancellations);
+        } else if (featureConfig instanceof SimpleRandomFeatureConfiguration simpleRandomConfig) { //Handles random_selector
+            return this.containsTrees(simpleRandomConfig, featureCancellations);
         }
         return new TreeSearchResult(false, null);
     }
@@ -62,6 +65,9 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
 
     private TreeSearchResult containsTrees(RandomPatchConfiguration randomPatchConfig, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
         PlacedFeature placedFeature = randomPatchConfig.feature().value();
+        if (randomPatchConfig.feature().value().feature().value().config() instanceof SimpleRandomFeatureConfiguration simpleRandomConfig ) {
+            return containsTrees(simpleRandomConfig, featureCancellations);
+        }
 
         if (isTree(placedFeature.feature().value())) {
             ResourceLocation featureResLoc = BuiltInRegistries.FEATURE.getKey(placedFeature.feature().value().feature());
@@ -89,6 +95,22 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
                 return new TreeSearchResult(true, nameSpace);
             }
             return containsTrees(currentConfiguredFeature.config(), featureCancellations);
+        }
+        return new TreeSearchResult(false, null);
+    }
+
+    private TreeSearchResult containsTrees(SimpleRandomFeatureConfiguration featureConfig, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
+        for (ConfiguredFeature<?, ?> feature : featureConfig.getFeatures().toList()) {
+            if (isTree(feature)) {
+                final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(feature.getFeatures().findFirst().get().feature());
+                String nameSpace = null;
+                if (featureRegistryName != null) {
+                    nameSpace = featureRegistryName.getNamespace();
+                }
+
+                return new TreeSearchResult(true, nameSpace);
+            }
+            return containsTrees(feature.config(), featureCancellations);
         }
         return new TreeSearchResult(false, null);
     }

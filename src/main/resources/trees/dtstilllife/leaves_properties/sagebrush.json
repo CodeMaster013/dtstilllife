@@ -2,6 +2,6 @@
   "type": "scruffy",
   "cell_kit": "dtstilllife:sagebrush",
   "primitive_leaves": "minecraft:pale_oak_leaves",
-  "smother": 1,
+  "smother": 2,
   "can_grow_on_ground": true
 }

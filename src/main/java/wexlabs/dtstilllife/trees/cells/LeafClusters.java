@@ -22,9 +22,9 @@ public class LeafClusters {
             0, 0, 0,
 
             //Layer 1(Middle)
-            0, 0, 0,
             0, 1, 0,
-            0, 0, 0,
+            1, 2, 1,
+            0, 1, 0,
 
             //Layer 2 (Top)
             0, 0, 0,
