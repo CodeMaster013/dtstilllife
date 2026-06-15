@@ -12,7 +12,15 @@
   "world_gen_acceptable_soils": ["snow_like"],
   "acceptable_soils": ["dirt_like"],
   "features": [
-    "conifer_topper"
+    "conifer_topper",
+    {
+      "name": "podzol",
+      "properties": {
+        "podzol_block": "minecraft:coarse_dirt",
+        "dark_threshold": 8,
+        "max_height": "40"
+      }
+    }
   ],
   "lang_overrides": {
     "seed": "Pine Cone"

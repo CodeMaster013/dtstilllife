@@ -1,10 +1,11 @@
 {
   "family": "dtstilllife:aspen",
   "tapering": 0.4,
-  "signal_energy": 32.0,
+  "signal_energy": 38.0,
   "up_probability": 18,
   "lowest_branch_height": 11,
   "growth_rate": 1.0,
+  "world_gen_leaf_map_height": 64,
   "leaves_properties": "dtstilllife:aspen",
   "acceptable_soils": [ "dirt_like" ],
   "lang_overrides": {

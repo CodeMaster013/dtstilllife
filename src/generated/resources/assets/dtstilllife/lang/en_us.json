@@ -24,6 +24,8 @@
   "block.dtstilllife.willow_branch": "Willow Tree",
   "block.dtstilllife.yucca_branch": "Yucca Tree",
   "item.dtstilllife.aspen_seed": "Aspen Tree Seed",
+  "item.dtstilllife.azalea_bush_large_seed": "Azalea Bush Large Seed",
+  "item.dtstilllife.azalea_bush_seed": "Azalea Bush Seed",
   "item.dtstilllife.baobab_seed": "Baobab Seed",
   "item.dtstilllife.beech_seed": "Beech Nut",
   "item.dtstilllife.black_pine_seed": "Black Pine Cone",
@@ -48,10 +50,11 @@
   "item.dtstilllife.teak_seed": "Teak Seed",
   "item.dtstilllife.willow_seed": "Willow Catkin",
   "item.dtstilllife.yucca_seed": "Yucca Seed",
-  "item.dtstilllife.yucca_small_seed": "Yucca Small Seed",
   "species.dtstilllife.aspen": "Aspen",
   "species.dtstilllife.aspen_dead": "Aspen Dead",
   "species.dtstilllife.aspen_tall": "Aspen Tall",
+  "species.dtstilllife.azalea_bush": "Azalea Bush",
+  "species.dtstilllife.azalea_bush_large": "Azalea Bush Large",
   "species.dtstilllife.baobab": "Baobab",
   "species.dtstilllife.beech": "Beech",
   "species.dtstilllife.birch_bush": "Birch Bush",
@@ -87,6 +90,5 @@
   "species.dtstilllife.teak": "Teak",
   "species.dtstilllife.willow": "Willow",
   "species.dtstilllife.willow_dead": "Willow Dead",
-  "species.dtstilllife.yucca": "Yucca",
-  "species.dtstilllife.yucca_small": "Yucca Small"
+  "species.dtstilllife.yucca": "Yucca"
 }

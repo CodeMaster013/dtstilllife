@@ -16,5 +16,5 @@
     "#c:is_wet": 0.75
   },
   "perfect_biomes": { "type": "badlands" },
-  "acceptable_soils": ["dirt_like","sand_like"]
+  "acceptable_soils": ["dirt_like"]
 }

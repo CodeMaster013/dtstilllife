@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-09T23:11:24.9866174	Block States: dtstilllife
+// 1.21.1	2026-06-12T16:44:27.5833733	Block States: dtstilllife
 3d57de2bf111b84abab08560762f956f31f0a16a assets/dtstilllife/blockstates/aspen_branch.json
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtstilllife/blockstates/aspen_leaves.json
 2716ce2b28c048422451af89e839f8c76e26d02a assets/dtstilllife/blockstates/aspen_sapling.json
@@ -20,7 +20,7 @@ c7ab54057748fe9f2359341678b00c4329e0bc84 assets/dtstilllife/blockstates/cypress_
 47e12b0b89f2825202d3107224b31bc8db3800d2 assets/dtstilllife/blockstates/cypress_root.json
 2a9e8e170c0d054d86a737b77e5c7de436d0d96e assets/dtstilllife/blockstates/cypress_sapling.json
 abdcea132f4f7994561161c2235480f5afe7af23 assets/dtstilllife/blockstates/fir_branch.json
-ab47df46795bc4ee1d88b446b0305ee474c1ed9c assets/dtstilllife/blockstates/fir_leaves.json
+e8323999fd52df15a0a4a6644543902710c6192a assets/dtstilllife/blockstates/fir_leaves.json
 26032bbb5f94a3487d024805d1a3b23d3458b1b3 assets/dtstilllife/blockstates/fir_root.json
 2b2926883005cadd7761d497161932b36bacde22 assets/dtstilllife/blockstates/joshua_branch.json
 b1becd3117db51ac9931069a2eeed02112dcaf31 assets/dtstilllife/blockstates/joshua_leaves.json
@@ -96,7 +96,6 @@ c005a46f2533a89158383655d2e632ed5ddfb5ef assets/dtstilllife/blockstates/willow_s
 c18017a27c9603d7840923a59709e3e16ac80a7e assets/dtstilllife/blockstates/yucca_branch.json
 0f1b13b41e365569348348dcac02b1c5c30c6cc8 assets/dtstilllife/blockstates/yucca_leaves.json
 374d12e5dd037750aba63e0c5676b88957301abc assets/dtstilllife/blockstates/yucca_sapling.json
-25a06286ade6cb298290f957eed398343c640fd8 assets/dtstilllife/blockstates/yucca_small_leaves.json
 a4ab6fe8494d19105462281ce78b2a09bd699413 assets/dtstilllife/models/block/aspen_branch.json
 734394e0a622c9f9d41fe6902b9a33ce1f76f4ef assets/dtstilllife/models/block/baobab_branch.json
 389cac7dec4d3c2cbb2d0ef19da09009a94048da assets/dtstilllife/models/block/beech_branch.json
@@ -131,9 +130,6 @@ f91651cdeb10cb30421697afdb1108e99e168731 assets/dtstilllife/models/block/palm_le
 363d0216d32e27cb418d7d16b012df4c954d91e5 assets/dtstilllife/models/block/palm_leaves/yucca_core_bottom.json
 3a564e879512fe7d9823f67baaae51c8b33584e3 assets/dtstilllife/models/block/palm_leaves/yucca_core_top.json
 cbcf1efeeab520586b5e6806c9fd90c9f1db4012 assets/dtstilllife/models/block/palm_leaves/yucca_frond.json
-8c572e9fbe4029d0c98f8113f7ea68901523a71f assets/dtstilllife/models/block/palm_leaves/yucca_small_core_bottom.json
-f64554280d6579b7d38cc37fb30d2f38b7e276a2 assets/dtstilllife/models/block/palm_leaves/yucca_small_core_top.json
-72fe59d5c03d67002d68f64fd1c4acb2ced62c38 assets/dtstilllife/models/block/palm_leaves/yucca_small_frond.json
 6ef6933b6cc249a3261e60678ea7e33fe67dc0dd assets/dtstilllife/models/block/pine_branch.json
 a3e6d68db0c3815c08b0d31f4a9c1e307961d67a assets/dtstilllife/models/block/pine_root.json
 6ef6933b6cc249a3261e60678ea7e33fe67dc0dd assets/dtstilllife/models/block/poplar_branch.json

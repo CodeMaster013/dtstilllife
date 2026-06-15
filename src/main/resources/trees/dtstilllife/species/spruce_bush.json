@@ -9,5 +9,6 @@
     "preferred_climate" : "cold",
     "generate_seed": false,
     "leaves_properties": "dtstilllife:spruce_bush",
-    "can_bone_meal_tree": false
+    "can_bone_meal_tree": false,
+    "world_gen_acceptable_soils": ["snow_like"]
 }

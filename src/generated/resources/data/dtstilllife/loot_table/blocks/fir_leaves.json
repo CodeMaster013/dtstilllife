@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:spruce_leaves"
+              "name": "minecraft:mangrove_leaves"
             },
             {
               "type": "dynamictrees:seed_item",

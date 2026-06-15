@@ -1,4 +1,5 @@
 {
   "primitive_leaves": "minecraft:acacia_leaves",
-  "smother": 12
+  "smother": 20,
+  "light_requirement": 7
 }

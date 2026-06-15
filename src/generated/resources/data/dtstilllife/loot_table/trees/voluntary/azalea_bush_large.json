@@ -12,11 +12,11 @@
               "rarity": 1.0
             }
           ],
-          "name": "dtstilllife:yucca_small_seed"
+          "name": "dtstilllife:azalea_bush_large_seed"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtstilllife:trees/voluntary/yucca_small"
+  "random_sequence": "dtstilllife:trees/voluntary/azalea_bush_large"
 }

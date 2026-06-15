@@ -1,6 +1,6 @@
 {
   "parent": "dynamictrees:item/standard_seed",
   "textures": {
-    "layer0": "dtstilllife:item/yucca_small_seed"
+    "layer0": "dtstilllife:item/azalea_bush_seed"
   }
 }

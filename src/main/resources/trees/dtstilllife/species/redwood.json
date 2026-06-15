@@ -5,7 +5,7 @@
   "up_probability": 30,
   "lowest_branch_height": 20,
   "growth_rate": 1.9,
-  "soil_longevity": 40,
+  "soil_longevity": 32,
   "max_branch_radius": 24,
   "growth_logic_kit": "dtstilllife:redwood",
   "leaves_properties": "dtstilllife:redwood",

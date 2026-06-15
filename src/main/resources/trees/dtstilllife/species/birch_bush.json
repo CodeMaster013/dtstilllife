@@ -10,5 +10,6 @@
     "preferred_climate" : "temperate",
     "primitive_sapling": "birch_sapling",
     "generate_seed": false,
-    "can_bone_meal_tree": false
+    "can_bone_meal_tree": false,
+    "world_gen_acceptable_soils": ["snow_like"]
 }

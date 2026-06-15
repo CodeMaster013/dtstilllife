@@ -5,6 +5,7 @@
   "up_probability": 10,
   "lowest_branch_height": 8,
   "growth_rate": 0.9,
+  "world_gen_leaf_map_height": 64,
   "leaves_properties": "dtstilllife:mahogany",
   "environment_factors": {
     "cold": 0.75,
