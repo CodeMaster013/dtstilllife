@@ -21,6 +21,13 @@
     "conifer_topper",
     "bottom_flare",
     {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.75,
+        "max_light_level": 12
+      }
+    },
+    {
       "name": "mound",
       "properties": {
         "mound_cutoff_radius": 999

@@ -41,6 +41,13 @@
             "properties": {
                 "min_radius": 8
             }
+        },
+        {
+            "name": "dtstilllife:forest_soil",
+            "properties": {
+                "gen_chance": 1,
+                "max_light_level": 12
+            }
         }
     ],
     "lang_overrides": {

@@ -39,6 +39,13 @@
         "max_length": 10,
         "quantity": 24
       }
+    },
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.75,
+        "max_light_level": 12
+      }
     }
   ],
   "lang_overrides": {

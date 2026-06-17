@@ -17,11 +17,10 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "podzol",
+      "name": "dtstilllife:forest_soil",
       "properties": {
-        "podzol_block": "minecraft:coarse_dirt",
-        "dark_threshold": 8,
-        "max_height": "40"
+        "gen_chance": 0.75,
+        "max_light_level": 12
       }
     }
   ],

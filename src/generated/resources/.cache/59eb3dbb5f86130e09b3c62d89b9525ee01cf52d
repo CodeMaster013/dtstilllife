@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-14T21:42:30.6751342	Loot Tables
+// 1.21.1	2026-06-17T08:11:16.9292893	Loot Tables
 18c3ea705431de928a0ef21a91a6992390be6263 data/dtstilllife/loot_table/blocks/aspen_leaves.json
 399fc3feaaaa47bac75d5da25e44bd6fa177373e data/dtstilllife/loot_table/blocks/baobab_leaves.json
 c5bfd382ad854b367eddd27d6656fe6516391f9a data/dtstilllife/loot_table/blocks/beech_leaves.json
@@ -88,7 +88,6 @@ a63e84ceb7774857df4bd78956238729684e4f06 data/dtstilllife/loot_table/trees/leave
 8e005356ec416047de84d99cdb3b85b78bb044b5 data/dtstilllife/loot_table/trees/leaves/yucca.json
 78933d34282b84703268825916b96a5cab58e32b data/dtstilllife/loot_table/trees/voluntary/aspen.json
 f6bfc8507be48e2f00ee77ec97740accbaac4286 data/dtstilllife/loot_table/trees/voluntary/azalea_bush.json
-6b883b88a88eec686d27c2edff6c401ba96b3e2f data/dtstilllife/loot_table/trees/voluntary/azalea_bush_large.json
 a9813afa99c3bc7d8d4e7b247f98fdd2564da737 data/dtstilllife/loot_table/trees/voluntary/baobab.json
 e91f82a12ec841f2323fa9dd74ffc4078e41e13a data/dtstilllife/loot_table/trees/voluntary/beech.json
 2421cd3ccc941b654d872263e99994243e8e0988 data/dtstilllife/loot_table/trees/voluntary/black_pine.json

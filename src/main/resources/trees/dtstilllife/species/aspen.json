@@ -7,6 +7,15 @@
   "growth_rate": 1.0,
   "leaves_properties": "dtstilllife:aspen",
   "acceptable_soils": [ "dirt_like" ],
+  "features": [
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.5,
+        "max_light_level": 12
+      }
+    }
+  ],
   "lang_overrides": {
     "seed": "Aspen Tree Seed"
   }

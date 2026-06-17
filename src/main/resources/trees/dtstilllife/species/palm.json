@@ -24,8 +24,7 @@
   },
   "primitive_sapling": "minecraft:oak_sapling",
   "acceptable_soils": [
-    "dirt_like",
-    "sand_like"
+    "dirt_like"
   ],
   "generate_seed": true
 }

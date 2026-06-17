@@ -13,6 +13,15 @@
     "growth_rate": 1.0,
     "soil_longevity": 16,
     "max_branch_radius": 8,
+    "features": [
+        {
+            "name": "dtstilllife:forest_soil",
+            "properties": {
+                "gen_chance": 0.5,
+                "max_light_level": 12
+            }
+        }
+    ],
     "preferred_climate" : "temperate",
     "climate_tolerance": 0.5,
     "primitive_sapling": "dark_oak_sapling",

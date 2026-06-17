@@ -1,5 +1,5 @@
 {
-    "family": "dtstilllife:beech",
+    "family": "dtstilllife:linden",
     "growth_logic_kit": {
         "name": "dtstilllife:up_and_out",
         "properties": {
@@ -15,6 +15,15 @@
     "max_branch_radius": 8,
     "preferred_climate" : "temperate",
     "climate_tolerance": 0.5,
+    "features":[
+        {
+            "name": "dtstilllife:forest_soil",
+            "properties": {
+                "gen_chance": 0.5,
+                "max_light_level": 12
+            }
+        }
+    ],
     "lang_overrides": {
         "seed": "Linden Seed"
     }

@@ -683,7 +683,7 @@
           "maple": 4,
           "birch_bush": 6,
           "azalea_bush": 5,
-          "palm": 5
+          "palm": 2
         }
       },
       "density": "simplex(x/256,0,z/256) + 0.25",
@@ -707,7 +707,7 @@
         }
       },
       "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.15, 1.0, 0.1)"
+      "chance": "if(simplex(x/75,0,z/75) > 0.5, 1.0, 0.1)"
     }
   },
   {
@@ -1177,13 +1177,13 @@
       "species": {
         "random": {
           "yucca": 3,
-          "pine": 5,
+          "pine": 18,
           "oak_bush_large": 2,
           "oak_undergrowth": 5
         }
       },
       "density": 0.75,
-      "chance": "if(is('oak_bush_large','oak_undergrowth', 'yucca'), simplex(x/100,0,z/100), if(simplex(x/300,0,z/300) >= 0.60, simplex(x/300,0,z/300) + 0.25, 0.01))"
+      "chance": "if(is('oak_bush_large','oak_undergrowth', 'yucca'), simplex(x/100,0,z/100), if(simplex(x/300,0,z/300) >= 0.25, simplex(x/300,0,z/300) + 0.25, 0.01))"
     }
   },
   {
@@ -1404,7 +1404,7 @@
         }
       },
       "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.15, 1.0, 0.1)"
+      "chance": "if(simplex(x/75,0,z/75) > 0.7, 1.0, 0.1)"
     }
   },
   {
@@ -1572,7 +1572,7 @@
         }
       },
       "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.15, 1.0, 0.1)"
+      "chance": "if(simplex(x/75,0,z/75) > 0.75, 1.0, 0.1)"
     }
   },
   {

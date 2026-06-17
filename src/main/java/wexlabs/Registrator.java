@@ -15,6 +15,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import wexlabs.dtstilllife.cancellers.StillLifeFeatureCanceller;
 import wexlabs.dtstilllife.trees.cells.CellKits;
 import wexlabs.dtstilllife.trees.features.ExtraBottomFlareGenFeature;
+import wexlabs.dtstilllife.trees.features.ForestSoilGenFeature;
 import wexlabs.dtstilllife.trees.features.ReplaceOnRadiusGenFeature;
 import wexlabs.dtstilllife.trees.growthlogic.*;
 import wexlabs.dtstilllife.trees.species.DiagonalPalmFamily;
@@ -26,6 +27,7 @@ public class Registrator {
 
     public static final GenFeature REPLACE_ON_RADIUS = new ReplaceOnRadiusGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "replace_on_radius"));
     public static final GenFeature EXTRA_FLARE = new ExtraBottomFlareGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "extra_bottom_flare"));
+    public static final GenFeature FOREST_SOIL = new ForestSoilGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "forest_soil"));
 
     public static final GrowthLogicKit LONG_BRANCH_CANOPY_GROWTH_LOGIC = new LongBranchCanopyGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "long_branch_canopy"));
     public static final GrowthLogicKit UP_AND_OUT_GROWTH_LOGIC = new UpAndOutGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "up_and_out"));
@@ -51,7 +53,7 @@ public class Registrator {
     @SubscribeEvent
     public static void onGenFeatureRegistry(final RegistryEvent<GenFeature> event) {
         if (event.isEntryOfType(GenFeature.class)) {
-            event.getRegistry().registerAll(REPLACE_ON_RADIUS, EXTRA_FLARE);
+            event.getRegistry().registerAll(REPLACE_ON_RADIUS, EXTRA_FLARE, FOREST_SOIL);
         }
 
     }

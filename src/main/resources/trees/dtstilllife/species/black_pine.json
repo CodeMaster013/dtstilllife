@@ -11,7 +11,14 @@
   "primitive_sapling": "minecraft:spruce_sapling",
   "acceptable_soils": ["dirt_like"],
   "features" : [
-    "conifer_topper"
+    "conifer_topper",
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.5,
+        "max_light_level": 12
+      }
+    }
   ],
   "lang_overrides": {
     "seed": "Black Pine Cone"

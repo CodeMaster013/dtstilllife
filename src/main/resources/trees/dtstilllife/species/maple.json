@@ -21,6 +21,13 @@
         "min_trunk_radius": 8,
         "scale_factor": 16
       }
+    },
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.5,
+        "max_light_level": 12
+      }
     }
   ],
   "lang_overrides": {

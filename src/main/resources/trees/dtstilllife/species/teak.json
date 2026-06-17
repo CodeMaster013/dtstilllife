@@ -17,6 +17,15 @@
   "primitive_sapling": "spruce_sapling",
   "acceptable_soils": ["dirt_like" ],
   "world_gen_acceptable_soils": [ "mud_like", "dirt_like" ],
+  "features" : [
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.75,
+        "max_light_level": 12
+      }
+    }
+  ],
   "lang_overrides": {
     "seed": "Teak Seed"
   }

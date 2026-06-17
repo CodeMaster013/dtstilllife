@@ -16,5 +16,14 @@
   "lang_overrides": {
     "seed": "Mahogany Pod"
   },
+  "features": [
+    {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 0.5,
+        "max_light_level": 12
+      }
+    }
+  ],
   "generate_seed": true
 }

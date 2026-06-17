@@ -28,6 +28,13 @@
       }
     },
     {
+      "name": "dtstilllife:forest_soil",
+      "properties": {
+        "gen_chance": 1.0,
+        "max_light_level": 12
+      }
+    },
+    {
       "name": "clear_volume",
       "properties": {
         "height": 32
