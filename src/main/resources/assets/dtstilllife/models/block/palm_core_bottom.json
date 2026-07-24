@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "dtbwg:block/palm_base",
-    "texture": "dtbwg:block/palm_base"
+    "particle": "dtstilllife:block/palm_base",
+    "texture": "dtstilllife:block/palm_base"
   },
   "elements": [
     {   "from": [ 4, 0, 4 ],
