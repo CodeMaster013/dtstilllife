@@ -2,6 +2,7 @@
   "common_leaves": "dtstilllife:sagebrush",
   "common_species": "dtstilllife:sagebrush",
   "primitive_log": "minecraft:cherry_log",
+  "primitive_stripped_log": "stripped_cherry_log",
   "max_branch_radius": 8,
   "generate_surface_root": true,
   "max_signal_depth": 3

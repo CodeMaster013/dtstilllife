@@ -2,6 +2,7 @@
   "common_leaves": "dtstilllife:pine",
   "common_species": "dtstilllife:pine",
   "primitive_log": "stripped_spruce_log",
+  "primitive_stripped_log": "stripped_spruce_log",
   "max_branch_radius": 24,
   "generate_surface_root": true,
   "max_signal_depth": 64
