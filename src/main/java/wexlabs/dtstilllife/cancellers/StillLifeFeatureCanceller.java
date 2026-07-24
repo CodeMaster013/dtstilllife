@@ -12,7 +12,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureCo
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import org.antlr.v4.runtime.tree.Tree;
 import org.apache.commons.lang3.StringUtils;
 import wexlabs.Mod;
 

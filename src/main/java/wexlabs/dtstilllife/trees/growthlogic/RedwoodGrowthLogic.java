@@ -9,7 +9,6 @@ import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionSelectionCon
 import com.dtteam.dynamictrees.systems.growthlogic.context.PositionalSpeciesContext;
 import com.dtteam.dynamictrees.tree.TreeHelper;
 import com.dtteam.dynamictrees.tree.species.Species;
-import com.dtteam.dynamictrees.utility.CoordUtils;
 import com.dtteam.dynamictrees.utility.MathUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -48,8 +47,8 @@ public class RedwoodGrowthLogic extends GrowthLogicKit {
 
         if (signal.delta.getY() < configuration.getLowestBranchHeight(context) - 3) {
 
-            int treeHash = getHashedVariation(level, signal.rootPos, 2);
-            int posHash = getHashedVariation(level, pos, 2);
+            int treeHash = VariateHeightGrowthLogic.getHashedVariation(level, signal.rootPos, 2);
+            int posHash = VariateHeightGrowthLogic.getHashedVariation(level, pos, 2);
 
             int hashMod = signalY < 7 ? 3 : 11;
             boolean sideTurn = !signal.isInTrunk() ||
@@ -140,7 +139,7 @@ public class RedwoodGrowthLogic extends GrowthLogicKit {
         final Species species = context.species();
         // Vary the height energy by a psuedorandom hash function
         return species.getSignalEnergy() * species.biomeSuitability(level, pos) +
-                getHashedVariation(level, pos, 2, 16);
+                VariateHeightGrowthLogic.getHashedVariation(level, pos, 2) % 16;
     }
 
     @Override
@@ -148,18 +147,8 @@ public class RedwoodGrowthLogic extends GrowthLogicKit {
         final Level level = context.level();
         final BlockPos pos = context.pos();
         return (int) ((super.getLowestBranchHeight(configuration, context) +
-                getHashedVariation(level, pos, 2, 16) * 0.5f) *
+                VariateHeightGrowthLogic.getHashedVariation(level, pos, 2) % 16 * 0.5f) *
                 context.species().biomeSuitability(level, pos));
-    }
-
-    private int getHashedVariation(Level level, BlockPos pos, int readyMade) {
-        long day = level.getGameTime() / 24000L;
-        int month = (int) day / 30;//Change the hashs every in-game month
-        return CoordUtils.coordHashCode(pos.above(month), readyMade);
-    }
-
-    private float getHashedVariation(Level level, BlockPos pos, int readyMade, Integer mod) {
-        return (getHashedVariation(level, pos, readyMade) % mod);//Vary the height energy by a psuedorandom hash function
     }
 
 }

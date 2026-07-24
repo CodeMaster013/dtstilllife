@@ -27,7 +27,6 @@ neoForge {
         }
 
         client {
-            gameDirectory = project.file('C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft')
             client()
         }
 
@@ -36,7 +35,6 @@ neoForge {
         }
 
         data {
-            gameDirectory = project.file('C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft')
             data()
             programArguments.addAll '--mod', 'dtstilllife',
                     '--all',
@@ -62,7 +60,6 @@ repositories {
     }
 }
 jar {
-    destinationDirectory = file("C:\\Users\\Wexit\\minecraft\\Instances\\1.21.1 (mod test)\\minecraft\\mods")
 }
 
 dependencies {

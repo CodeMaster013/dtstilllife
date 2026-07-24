@@ -44,7 +44,7 @@ public class Registrator {
 
 
     @SubscribeEvent
-    public static void registerFeatureCanceller (final RegistryEvent<FeatureCanceller> event) {
+    public static void registerFeatureCanceller(final RegistryEvent<FeatureCanceller> event) {
         if (event.isEntryOfType(FeatureCanceller.class)) {
             event.getRegistry().registerAll(CANCELLER);
         }

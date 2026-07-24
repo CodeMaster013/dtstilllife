@@ -31,10 +31,10 @@ public class VariateHeightGrowthLogic extends GrowthLogicKit {
         this.register(HEIGHT_VARIATION, LOWEST_BRANCH_VARIATION);
     }
 
-    public static int getHashedVariation (LevelAccessor world, BlockPos pos, int heightVariation){
+    public static int getHashedVariation(LevelAccessor world, BlockPos pos, int hashSeed) {
         long day = world.dayTime() / 24000L;
-        int month = (int)day / 30;//Change the hashs every in-game month
-        return (CoordUtils.coordHashCode(pos.above(month), 2) % heightVariation);//Vary the height energy by a psuedorandom hash function
+        int month = (int) day / 30;
+        return CoordUtils.coordHashCode(pos.above(month), hashSeed);
     }
 
     @Override
@@ -42,13 +42,13 @@ public class VariateHeightGrowthLogic extends GrowthLogicKit {
         Level world = context.level();
         BlockPos pos = context.pos();
         return super.getEnergy(configuration, context) * context.species().biomeSuitability(world, pos)
-                + getHashedVariation(world, pos, configuration.get(HEIGHT_VARIATION));
+                + getHashedVariation(world, pos, 2) % configuration.get(HEIGHT_VARIATION);
     }
 
     @Override
     public int getLowestBranchHeight(GrowthLogicKitConfiguration configuration, PositionalSpeciesContext context) {
         return super.getLowestBranchHeight(configuration, context)
-                + getHashedVariation(context.level(), context.pos(), configuration.get(LOWEST_BRANCH_VARIATION));
+                + getHashedVariation(context.level(), context.pos(), 2) % configuration.get(LOWEST_BRANCH_VARIATION);
     }
 
 }

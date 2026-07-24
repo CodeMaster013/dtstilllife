@@ -14,8 +14,6 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class JuniperGrowthLogic extends GrowthLogicKit {
 
-    private static final Direction[] HORIZONTALS = {Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST};
-
     public JuniperGrowthLogic(ResourceLocation registryName) {
         super(registryName);
     }
@@ -69,7 +67,7 @@ public class JuniperGrowthLogic extends GrowthLogicKit {
     }
 
     private static Direction getDirectionBias(BlockPos rootPos) {
-        return HORIZONTALS[CoordUtils.coordHashCode(rootPos, 0) % 4];
+        return CoordUtils.HORIZONTALS[CoordUtils.coordHashCode(rootPos, 0) % 4];
     }
 
 }
