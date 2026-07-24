@@ -45,4 +45,4 @@ The built JAR will be in `build/libs/`.
 
 ## License
 
-No license specified. Contact the original author (Wexit) for usage terms.
+[MIT](LICENSE)
